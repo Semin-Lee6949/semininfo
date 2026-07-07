@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로또 번호 추첨기</title>
+    <style>
+      :root {
+        --bg: #111827;
+        --card: #1f2937;
+        --text: #f9fafb;
+        --sub: #9ca3af;
+        --accent: #f59e0b;
+        --accent-2: #ef4444;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Pretendard", "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #0f172a, var(--bg));
+        color: var(--text);
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+
+      .app {
+        width: min(100%, 720px);
+        background: rgba(31, 41, 55, 0.95);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 24px;
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.3);
+        padding: 32px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        font-size: 2rem;
+      }
+
+      p {
+        margin: 0 0 24px;
+        color: var(--sub);
+      }
+
+      .numbers {
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin: 28px 0;
+      }
+
+      .ball {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: white;
+        box-shadow: inset 0 -8px 12px rgba(0, 0, 0, 0.18);
+      }
+
+      .ball:nth-child(1) { background: linear-gradient(145deg, #fbbf24, #d97706); }
+      .ball:nth-child(2) { background: linear-gradient(145deg, #60a5fa, #2563eb); }
+      .ball:nth-child(3) { background: linear-gradient(145deg, #34d399, #059669); }
+      .ball:nth-child(4) { background: linear-gradient(145deg, #fb923c, #ea580c); }
+      .ball:nth-child(5) { background: linear-gradient(145deg, #a78bfa, #7c3aed); }
+      .ball:nth-child(6) { background: linear-gradient(145deg, #f472b6, #db2777); }
+
+      .button-row {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      button {
+        border: 0;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: 999px;
+        padding: 12px 20px;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+      }
+
+      button:hover {
+        transform: translateY(-2px);
+      }
+
+      .primary {
+        background: var(--accent);
+        color: #111827;
+      }
+
+      .secondary {
+        background: transparent;
+        color: var(--text);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .hint {
+        margin-top: 18px;
+        font-size: 0.95rem;
+        color: var(--sub);
+      }
+
+      .empty {
+        min-height: 72px;
+        display: grid;
+        place-items: center;
+        color: var(--sub);
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="app">
+      <h1>로또 번호 추첨기</h1>
+      <p>클릭 한 번으로 오늘의 행운의 번호를 뽑아보세요.</p>
+
+      <div id="numberArea" class="numbers">
+        <div class="empty">아직 추첨되지 않았어요.</div>
+      </div>
+
+      <div class="button-row">
+        <button class="primary" id="drawBtn">번호 추첨하기</button>
+        <button class="secondary" id="resetBtn">초기화</button>
+      </div>
+
+      <div class="hint">중복 없이 1부터 45까지의 숫자 6개를 뽑습니다.</div>
+    </main>
+
+    <script>
+      const drawBtn = document.getElementById('drawBtn');
+      const resetBtn = document.getElementById('resetBtn');
+      const numberArea = document.getElementById('numberArea');
+
+      function drawNumbers() {
+        const numbers = new Set();
+
+        while (numbers.size < 6) {
+          numbers.add(Math.floor(Math.random() * 45) + 1);
+        }
+
+        const sorted = [...numbers].sort((a, b) => a - b);
+        renderNumbers(sorted);
+      }
+
+      function renderNumbers(numbers) {
+        numberArea.innerHTML = '';
+
+        numbers.forEach((number) => {
+          const ball = document.createElement('div');
+          ball.className = 'ball';
+          ball.textContent = number;
+          numberArea.appendChild(ball);
+        });
+      }
+
+      drawBtn.addEventListener('click', drawNumbers);
+      resetBtn.addEventListener('click', () => {
+        numberArea.innerHTML = '<div class="empty">아직 추첨되지 않았어요.</div>';
+      });
+    </script>
+  </body>
+</html>
