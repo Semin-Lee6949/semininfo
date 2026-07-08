@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="gate.css">
+  <link rel="stylesheet" href="personalized.css">
 </head>
 <body class="locked">
   <div class="access-gate" id="accessGate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
@@ -86,7 +87,8 @@
     </section>
 
     <section class="policies-section" id="policies" aria-labelledby="policyTitle">
-      <div class="section-heading"><div><span class="section-kicker">RECOMMENDED</span><h2 id="policyTitle">지금 주목할 청년정책</h2><p>신청 기간과 혜택을 한눈에 확인해 보세요.</p></div><div class="list-actions"><span id="resultLabel">전체 정책</span><select id="sortSelect" aria-label="정렬 기준"><option value="recommended">추천순</option><option value="deadline">마감임박순</option><option value="latest">최신순</option></select></div></div>
+      <div class="section-heading"><div><span class="section-kicker">RECOMMENDED</span><h2 id="policyTitle">지금 주목할 청년정책</h2><p>신청 기간과 혜택을 한눈에 확인해 보세요.</p></div><div class="list-actions"><span id="resultLabel">전체 정책</span><select id="sortSelect" aria-label="정렬 기준"><option value="recommended">추천순</option><option value="deadline">마감임박순</option><option value="latest">최신순</option><option value="semin">세민맞춤</option></select></div></div>
+      <div class="personalized-note" id="personalizedNote" hidden><b>세민맞춤</b><span>만 29세 · 서울 거주 · 자취 중</span><button type="button" id="clearPersonalized">전체 보기</button></div>
       <div class="status-message" id="statusMessage" role="status"><span></span> 온통청년 데이터를 확인하고 있어요.</div>
       <div class="policy-grid" id="policyGrid" aria-live="polite"></div>
       <button class="more-button" id="moreButton" type="button">정책 더 보기 <span>↓</span></button>

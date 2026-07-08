@@ -18,7 +18,7 @@ function unlock(){document.body.classList.remove('locked');document.querySelecto
 if(sessionStorage.getItem('youth-access')==='granted')unlock();
 document.querySelector('#gateForm')?.addEventListener('submit',async event=>{event.preventDefault();const card=event.currentTarget;const input=document.querySelector('#gatePassword');const error=document.querySelector('#gateError');if(await sha256(input.value)===ACCESS_HASH){unlock();return}error.textContent='비밀번호가 올바르지 않습니다.';input.value='';input.focus();card.classList.remove('shake');void card.offsetWidth;card.classList.add('shake')});
 
-const state={policies:[...FALLBACK_POLICIES],contents:[...FALLBACK_CONTENT],category:'전체',query:'',visible:6,saved:new Set(JSON.parse(localStorage.getItem('savedPolicies')||'[]'))};
+const state={policies:[...FALLBACK_POLICIES],contents:[...FALLBACK_CONTENT],category:'전체',query:'',sort:'recommended',visible:6,saved:new Set(JSON.parse(localStorage.getItem('savedPolicies')||'[]'))};
 const $=s=>document.querySelector(s);
 const clean=v=>String(v??'').replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim();
 const pick=(obj,keys,fallback='')=>{for(const key of keys)if(obj?.[key]!=null&&obj[key]!=='')return obj[key];return fallback};
@@ -29,7 +29,9 @@ function normalizePolicy(p,i){
   const rawCategory=clean(pick(p,['lclsfNm','policyType','bizTycdNm','plcyMajorCdNm','category'],'기타'));
   const categories=['일자리','주거','교육','복지','금융','창업'];
   const category=categories.find(c=>rawCategory.includes(c))||({'취업':'일자리','생활':'복지·문화'}[rawCategory]||'복지');
-  return {id:String(pick(p,['plcyNo','bizId','policyId','id'],`api-${i}`)),category,provider:clean(pick(p,['sprvsnInstCdNm','operInstCdNm','cnsgNmor','provider','orgName'],'온통청년')),title,description:clean(pick(p,['plcyExplnCn','polyItcnCn','description','plcySprtCn'],'자세한 지원 내용은 정책 안내에서 확인해 주세요.')),region:clean(pick(p,['zipCdNm','ctpvNm','region'],'전국')),period:clean(pick(p,['aplyYmd','rqutPrdCn','period'],'공고 확인')),url:pick(p,['aplyUrlAddr','rqutUrla','url'],'https://www.youthcenter.go.kr/youthPolicy/ythPlcyTotalSearch')};
+  const zipCodes=clean(pick(p,['zipCd'],'')).split(',').filter(Boolean);
+  const region=clean(pick(p,['zipCdNm','ctpvNm','region'],zipCodes.length?(zipCodes.every(code=>code.startsWith('11'))?'서울':zipCodes.some(code=>code.startsWith('11'))?'전국':'지역 한정'):'전국'));
+  return {id:String(pick(p,['plcyNo','bizId','policyId','id'],`api-${i}`)),category,provider:clean(pick(p,['sprvsnInstCdNm','operInstCdNm','cnsgNmor','provider','orgName'],'온통청년')),title,description:clean(pick(p,['plcyExplnCn','polyItcnCn','description','plcySprtCn'],'자세한 지원 내용은 정책 안내에서 확인해 주세요.')),region,period:clean(pick(p,['aplyYmd','rqutPrdCn','period'],'공고 확인')),url:pick(p,['aplyUrlAddr','refUrlAddr1','rqutUrla','url'],'https://www.youthcenter.go.kr/youthPolicy/ythPlcyTotalSearch'),minAge:Number(pick(p,['sprtTrgtMinAge'],0)),maxAge:Number(pick(p,['sprtTrgtMaxAge'],99)),zipCodes,providerGroup:clean(pick(p,['pvsnInstGroupCd'],'')),keywords:clean(pick(p,['plcyKywdNm'],'')),qualification:clean(pick(p,['addAplyQlfcCndCn'],'')),registeredAt:clean(pick(p,['frstRegDt'],'')),views:Number(pick(p,['inqCnt'],0))};
 }
 function normalizeContent(c,i){return {type:'YOUTH CONTENT',category:clean(pick(c,['pstSeNm','contentTypeName','category'],'청년생활')),title:clean(pick(c,['pstTtl','contentTitle','title','sj'],`청년 콘텐츠 ${i+1}`)),date:clean(pick(c,['frstRegDt','regDate','date'],'')),url:pick(c,['urlAddr','linkUrl','url'],'https://www.youthcenter.go.kr/youthNews/ythTips/ythTipsList')}}
 
@@ -48,9 +50,24 @@ async function loadData(){
   const failed=[p,c].filter(x=>x.status==='rejected').length;setStatus(failed?`일부 실시간 데이터를 불러오지 못해 안전한 미리보기로 표시합니다.`:'온통청년 최신 데이터로 업데이트했습니다.',failed?'warn':'ok');render();
 }
 function setStatus(message,type='warn'){const el=$('#statusMessage');el.innerHTML=`<span></span>${message}`;el.className=`status-message show ${type}`}
-function filtered(){const q=state.query.toLowerCase();return state.policies.filter(p=>(state.category==='전체'||p.category.includes(state.category))&&(!q||`${p.title} ${p.description} ${p.provider} ${p.category}`.toLowerCase().includes(q)))}
+function deadlineValue(policy){const matches=String(policy.period||'').match(/\d{8}/g);if(!matches?.length)return Number.MAX_SAFE_INTEGER;const raw=matches.at(-1);return new Date(`${raw.slice(0,4)}-${raw.slice(4,6)}-${raw.slice(6,8)}T23:59:59+09:00`).getTime()}
+function isSeoulEligible(policy){
+  if(policy.zipCodes?.some(code=>code.startsWith('11')))return true;
+  if(!policy.zipCodes?.length&&policy.providerGroup==='0054001')return true;
+  return /서울|전국/.test(`${policy.title} ${policy.description} ${policy.qualification} ${policy.provider}`);
+}
+function isSeminMatch(policy){const ageOk=29>=(policy.minAge??0)&&29<=(policy.maxAge||99);const deadline=deadlineValue(policy);const open=deadline===Number.MAX_SAFE_INTEGER||deadline>=Date.now();return ageOk&&isSeoulEligible(policy)&&open}
+function seminScore(policy){const text=`${policy.title} ${policy.description} ${policy.keywords} ${policy.qualification}`;let score=0;if(/월세|주거|주택|임대|전세|보증금|이사비|중개보수|청약|1인가구|자취/.test(text))score+=100;if(policy.region==='서울')score+=35;if(/서울/.test(text))score+=20;if(policy.category==='금융'||policy.category==='복지')score+=8;score+=Math.min(policy.views||0,5000)/1000;return score}
+function filtered(){
+  const q=state.query.toLowerCase();let items=state.policies.filter(p=>(state.category==='전체'||p.category.includes(state.category))&&(!q||`${p.title} ${p.description} ${p.provider} ${p.category}`.toLowerCase().includes(q)));
+  if(state.sort==='semin')items=items.filter(isSeminMatch).sort((a,b)=>seminScore(b)-seminScore(a)||deadlineValue(a)-deadlineValue(b));
+  else if(state.sort==='deadline')items.sort((a,b)=>deadlineValue(a)-deadlineValue(b));
+  else if(state.sort==='latest')items.sort((a,b)=>String(b.registeredAt||'').localeCompare(String(a.registeredAt||'')));
+  else items.sort((a,b)=>(b.views||0)-(a.views||0));
+  return items;
+}
 function renderPolicies(){
-  const items=filtered();$('#resultLabel').textContent=state.query?`검색 결과 ${items.length}개`:state.category==='전체'?'전체 정책':`${state.category} 정책`;
+  const items=filtered();$('#personalizedNote').hidden=state.sort!=='semin';$('#resultLabel').textContent=state.sort==='semin'?`맞춤 정책 ${items.length}개`:state.query?`검색 결과 ${items.length}개`:state.category==='전체'?'전체 정책':`${state.category} 정책`;
   $('#policyGrid').innerHTML=items.slice(0,state.visible).map(p=>`<article class="policy-card"><div class="card-top"><span class="tag ${p.urgent?'urgent':''}">${p.urgent?'마감임박':escapeHtml(p.category)}</span><span class="provider">${escapeHtml(p.provider)}</span><button class="save ${state.saved.has(p.id)?'saved':''}" data-save="${escapeHtml(p.id)}" type="button" aria-label="${escapeHtml(p.title)} 저장">${state.saved.has(p.id)?'♥':'♡'}</button></div><h3>${escapeHtml(p.title)}</h3><p>${escapeHtml(p.description)}</p><div class="card-meta"><span>지원 지역<b>${escapeHtml(p.region)}</b></span><span>신청 기간<b>${escapeHtml(p.period)}</b></span></div><a class="card-link" href="${safeUrl(p.url)}" target="_blank" rel="noopener">자세히 보기 <span>→</span></a></article>`).join('')||'<div class="empty-state">조건에 맞는 정책이 없어요.<br>검색어나 분야를 바꿔보세요.</div>';
   $('#moreButton').style.display=items.length>state.visible?'block':'none';updateSavedCount();
 }
@@ -67,7 +84,8 @@ $('#categories').addEventListener('click',e=>{const b=e.target.closest('[data-ca
 $('#policyGrid').addEventListener('click',e=>{const b=e.target.closest('[data-save]');if(!b)return;const id=b.dataset.save;if(state.saved.has(id)){state.saved.delete(id);toast('저장에서 삭제했어요.')}else{state.saved.add(id);toast('관심 정책으로 저장했어요.')}renderPolicies()});
 $('#moreButton').addEventListener('click',()=>{state.visible+=6;renderPolicies()});
 $('#savedButton').addEventListener('click',()=>{toast(state.saved.size?`저장한 정책이 ${state.saved.size}개 있어요.`:'아직 저장한 정책이 없어요.')});
-$('#sortSelect').addEventListener('change',()=>toast('정렬 기준을 적용했어요.'));
+$('#sortSelect').addEventListener('change',event=>{state.sort=event.target.value;state.visible=6;renderPolicies();toast(state.sort==='semin'?'세민님의 조건에 맞는 정책만 모았어요.':'정렬 기준을 적용했어요.')});
+$('#clearPersonalized').addEventListener('click',()=>{state.sort='recommended';$('#sortSelect').value='recommended';state.visible=6;renderPolicies()});
 $('#menuButton').addEventListener('click',()=>toast('정책 검색과 콘텐츠 메뉴를 준비했어요.'));
 
 render();loadData();
