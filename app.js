@@ -7,9 +7,9 @@ const FALLBACK_POLICIES = [
   {id:'p6',category:'복지',provider:'보건복지부',title:'청년 마음건강 지원',description:'전문 심리상담을 통해 청년의 마음건강 회복과 일상 복귀를 돕습니다.',region:'지역별',period:'지역별 상이',url:'https://www.youthcenter.go.kr/youthPolicy/ythPlcyTotalSearch'},
 ];
 const FALLBACK_CONTENT = [
-  {type:'MONEY GUIDE',category:'금융생활',title:'사회초년생이 꼭 알아야 할 돈 관리 5단계',date:'2026. 07. 03'},
-  {type:'LIVING GUIDE',category:'주거생활',title:'처음 독립할 때 놓치기 쉬운 주거 체크리스트',date:'2026. 06. 28'},
-  {type:'CAREER NOTE',category:'취업정보',title:'요즘 채용 담당자가 보는 자기소개서의 핵심',date:'2026. 06. 20'},
+  {type:'MONEY GUIDE',category:'금융생활',title:'사회초년생이 꼭 알아야 할 돈 관리 5단계',date:'2026. 07. 03',url:'content-detail.html?id=money'},
+  {type:'LIVING GUIDE',category:'주거생활',title:'처음 독립할 때 놓치기 쉬운 주거 체크리스트',date:'2026. 06. 28',url:'content-detail.html?id=living'},
+  {type:'CAREER NOTE',category:'취업정보',title:'요즘 채용 담당자가 보는 자기소개서의 핵심',date:'2026. 06. 20',url:'content-detail.html?id=career'},
 ];
 
 const ACCESS_HASH='56632b41c72527c1783c8d3e6abf8494d78289d06264aa39f675dd4685d20145';
@@ -33,7 +33,7 @@ function normalizePolicy(p,i){
   const region=clean(pick(p,['zipCdNm','ctpvNm','region'],zipCodes.length?(zipCodes.every(code=>code.startsWith('11'))?'서울':zipCodes.some(code=>code.startsWith('11'))?'전국':'지역 한정'):'전국'));
   return {id:String(pick(p,['plcyNo','bizId','policyId','id'],`api-${i}`)),category,provider:clean(pick(p,['sprvsnInstCdNm','operInstCdNm','cnsgNmor','provider','orgName'],'온통청년')),title,description:clean(pick(p,['plcyExplnCn','polyItcnCn','description','plcySprtCn'],'자세한 지원 내용은 정책 안내에서 확인해 주세요.')),region,period:clean(pick(p,['aplyYmd','rqutPrdCn','period'],'공고 확인')),url:pick(p,['aplyUrlAddr','refUrlAddr1','rqutUrla','url'],'https://www.youthcenter.go.kr/youthPolicy/ythPlcyTotalSearch'),minAge:Number(pick(p,['sprtTrgtMinAge'],0)),maxAge:Number(pick(p,['sprtTrgtMaxAge'],99)),zipCodes,providerGroup:clean(pick(p,['pvsnInstGroupCd'],'')),keywords:clean(pick(p,['plcyKywdNm'],'')),qualification:clean(pick(p,['addAplyQlfcCndCn'],'')),registeredAt:clean(pick(p,['frstRegDt'],'')),views:Number(pick(p,['inqCnt'],0))};
 }
-function normalizeContent(c,i){return {type:'YOUTH CONTENT',category:clean(pick(c,['pstSeNm','contentTypeName','category'],'청년생활')),title:clean(pick(c,['pstTtl','contentTitle','title','sj'],`청년 콘텐츠 ${i+1}`)),date:clean(pick(c,['frstRegDt','regDate','date'],'')),url:pick(c,['urlAddr','linkUrl','url'],'https://www.youthcenter.go.kr/youthNews/ythTips/ythTipsList')}}
+function normalizeContent(c,i){return {type:'YOUTH CONTENT',category:clean(pick(c,['pstSeNm','contentTypeName','category'],'청년생활')),title:clean(pick(c,['pstTtl','contentTitle','title','sj'],`청년 콘텐츠 ${i+1}`)),date:clean(pick(c,['frstRegDt','regDate','date'],'')),url:pick(c,['urlAddr','linkUrl','url'],'https://www.youthcenter.go.kr/bbs03List/46')}}
 
 async function requestApi(type,key){
   const response=await fetch(`data/${type}.json`,{headers:{Accept:'application/json'},cache:'no-cache'});if(!response.ok)throw new Error(`DATA ${response.status}`);return response.json();
