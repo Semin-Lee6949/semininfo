@@ -1,350 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>로또 번호 추첨기</title>
-    <script>
-      (() => {
-        const savedTheme = localStorage.getItem('theme');
-        const theme = savedTheme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        document.documentElement.dataset.theme = theme;
-      })();
-    </script>
-    <style>
-      :root {
-        color-scheme: light;
-        --bg-start: #f8fafc;
-        --bg-end: #e2e8f0;
-        --card: rgba(255, 255, 255, 0.94);
-        --text: #0f172a;
-        --sub: #64748b;
-        --border: rgba(15, 23, 42, 0.1);
-        --secondary-border: rgba(15, 23, 42, 0.2);
-        --shadow: rgba(15, 23, 42, 0.16);
-        --accent: #f59e0b;
-      }
-
-      :root[data-theme="dark"] {
-        color-scheme: dark;
-        --bg-start: #0f172a;
-        --bg-end: #111827;
-        --card: rgba(31, 41, 55, 0.95);
-        --text: #f9fafb;
-        --sub: #9ca3af;
-        --border: rgba(255, 255, 255, 0.08);
-        --secondary-border: rgba(255, 255, 255, 0.2);
-        --shadow: rgba(0, 0, 0, 0.3);
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        font-family: "Pretendard", "Segoe UI", sans-serif;
-        background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
-        color: var(--text);
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        padding: 24px;
-        transition: background 0.25s ease, color 0.25s ease;
-      }
-
-      .app {
-        width: min(100%, 720px);
-        position: relative;
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: 24px;
-        box-shadow: 0 24px 80px var(--shadow);
-        padding: 32px;
-        text-align: center;
-        transition: background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
-      }
-
-      .theme-toggle {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        width: 44px;
-        height: 44px;
-        padding: 0;
-        display: grid;
-        place-items: center;
-        background: transparent;
-        color: var(--text);
-        border: 1px solid var(--secondary-border);
-        font-size: 1.25rem;
-      }
-
-      h1 {
-        margin: 0 0 10px;
-        font-size: 2rem;
-        padding: 0 48px;
-      }
-
-      p {
-        margin: 0 0 24px;
-        color: var(--sub);
-      }
-
-      .numbers {
-        display: flex;
-        justify-content: center;
-        gap: 14px;
-        flex-wrap: wrap;
-        margin: 28px 0;
-      }
-
-      .ball {
-        width: 72px;
-        height: 72px;
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
-        font-size: 1.4rem;
-        font-weight: 700;
-        color: white;
-        box-shadow: inset 0 -8px 12px rgba(0, 0, 0, 0.18);
-      }
-
-      .ball:nth-child(1) { background: linear-gradient(145deg, #fbbf24, #d97706); }
-      .ball:nth-child(2) { background: linear-gradient(145deg, #60a5fa, #2563eb); }
-      .ball:nth-child(3) { background: linear-gradient(145deg, #34d399, #059669); }
-      .ball:nth-child(4) { background: linear-gradient(145deg, #fb923c, #ea580c); }
-      .ball:nth-child(5) { background: linear-gradient(145deg, #a78bfa, #7c3aed); }
-      .ball:nth-child(6) { background: linear-gradient(145deg, #f472b6, #db2777); }
-
-      .button-row {
-        display: flex;
-        justify-content: center;
-        gap: 12px;
-        flex-wrap: wrap;
-      }
-
-      button {
-        border: 0;
-        cursor: pointer;
-        font-size: 1rem;
-        font-weight: 700;
-        border-radius: 999px;
-        padding: 12px 20px;
-        transition: transform 0.2s ease, opacity 0.2s ease;
-      }
-
-      button:hover {
-        transform: translateY(-2px);
-      }
-
-      button:focus-visible {
-        outline: 3px solid var(--accent);
-        outline-offset: 3px;
-      }
-
-      .primary {
-        background: var(--accent);
-        color: #111827;
-      }
-
-      .secondary {
-        background: transparent;
-        color: var(--text);
-        border: 1px solid var(--secondary-border);
-      }
-
-      .hint {
-        margin-top: 18px;
-        font-size: 0.95rem;
-        color: var(--sub);
-      }
-
-      .empty {
-        min-height: 72px;
-        display: grid;
-        place-items: center;
-        color: var(--sub);
-        font-size: 1rem;
-      }
-
-      .contact {
-        margin-top: 32px;
-        padding-top: 28px;
-        border-top: 1px solid var(--border);
-        text-align: left;
-      }
-
-      .contact h2 {
-        margin: 0 0 8px;
-        text-align: center;
-        font-size: 1.4rem;
-      }
-
-      .contact > p {
-        margin-bottom: 22px;
-        text-align: center;
-      }
-
-      .contact-form {
-        display: grid;
-        gap: 16px;
-      }
-
-      .form-field {
-        display: grid;
-        gap: 7px;
-      }
-
-      label {
-        font-weight: 700;
-        font-size: 0.95rem;
-      }
-
-      input,
-      textarea {
-        width: 100%;
-        border: 1px solid var(--secondary-border);
-        border-radius: 12px;
-        padding: 12px 14px;
-        background: transparent;
-        color: var(--text);
-        font: inherit;
-      }
-
-      textarea {
-        min-height: 130px;
-        resize: vertical;
-      }
-
-      input:focus-visible,
-      textarea:focus-visible {
-        outline: 3px solid var(--accent);
-        outline-offset: 2px;
-        border-color: transparent;
-      }
-
-      .contact-form .primary {
-        justify-self: center;
-        min-width: 150px;
-      }
-
-      .honeypot {
-        position: absolute;
-        left: -9999px;
-      }
-
-      @media (max-width: 520px) {
-        .app { padding: 76px 20px 28px; }
-        h1 { padding: 0; }
-      }
-    </style>
-  </head>
-  <body>
-    <main class="app">
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="다크 모드로 전환" title="다크 모드로 전환">
-        <span aria-hidden="true">🌙</span>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="흩어진 청년정책과 생활 콘텐츠를 한눈에 찾는 청년정책 큐레이션 서비스">
+  <meta name="theme-color" content="#173f35">
+  <title>청년나침반 — 나에게 맞는 청년정책 찾기</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="gate.css">
+</head>
+<body class="locked">
+  <div class="access-gate" id="accessGate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+    <form class="gate-card" id="gateForm">
+      <span class="brand-mark gate-mark" aria-hidden="true"><span></span></span>
+      <span class="section-kicker">PRIVATE ACCESS</span>
+      <h1 id="gateTitle">청년나침반에 오신 것을<br>환영합니다.</h1>
+      <p>공유받은 비밀번호를 입력해 주세요.</p>
+      <label class="sr-only" for="gatePassword">접속 비밀번호</label>
+      <input id="gatePassword" type="password" inputmode="numeric" maxlength="4" placeholder="비밀번호 4자리" autocomplete="current-password" required>
+      <button type="submit">입장하기 <span>→</span></button>
+      <small id="gateError" role="alert"></small>
+    </form>
+  </div>
+  <a class="skip" href="#main">본문 바로가기</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#" aria-label="청년나침반 홈">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span>청년나침반</span>
+      </a>
+      <nav class="nav" aria-label="주요 메뉴">
+        <a class="active" href="#policies">정책 찾기</a>
+        <a href="#content">청년 콘텐츠</a>
+        <a href="#guide">이용 가이드</a>
+      </nav>
+      <button class="saved-button" id="savedButton" type="button" aria-label="저장한 정책 보기">
+        <span aria-hidden="true">♡</span> 저장한 정책 <b id="savedCount">0</b>
       </button>
-      <h1>로또 번호 추첨기</h1>
-      <p>클릭 한 번으로 오늘의 행운의 번호를 뽑아보세요.</p>
+      <button class="menu-button" id="menuButton" type="button" aria-label="메뉴 열기"><span></span><span></span></button>
+    </div>
+  </header>
 
-      <div id="numberArea" class="numbers">
-        <div class="empty">아직 추첨되지 않았어요.</div>
-      </div>
-
-      <div class="button-row">
-        <button class="primary" id="drawBtn">번호 추첨하기</button>
-        <button class="secondary" id="resetBtn">초기화</button>
-      </div>
-
-      <div class="hint">중복 없이 1부터 45까지의 숫자 6개를 뽑습니다.</div>
-
-      <section class="contact" aria-labelledby="contactTitle">
-        <h2 id="contactTitle">제휴 문의</h2>
-        <p>제휴 제안이나 협업 문의를 남겨주세요.</p>
-
-        <form class="contact-form" action="https://formspree.io/f/xvzjyegk" method="POST">
-          <input type="hidden" name="_subject" value="로또 번호 추첨기 제휴 문의" />
-
-          <div class="form-field">
-            <label for="contactName">이름</label>
-            <input id="contactName" name="name" type="text" autocomplete="name" required />
-          </div>
-
-          <div class="form-field">
-            <label for="contactEmail">이메일</label>
-            <input id="contactEmail" name="email" type="email" autocomplete="email" required />
-          </div>
-
-          <div class="form-field">
-            <label for="contactMessage">문의 내용</label>
-            <textarea id="contactMessage" name="message" placeholder="제휴 내용을 입력해 주세요." required></textarea>
-          </div>
-
-          <div class="honeypot" aria-hidden="true">
-            <label for="companyWebsite">회사 웹사이트</label>
-            <input id="companyWebsite" name="_gotcha" type="text" tabindex="-1" autocomplete="off" />
-          </div>
-
-          <button class="primary" type="submit">문의 보내기</button>
+  <main id="main">
+    <section class="hero">
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+      <div class="hero-inner">
+        <div class="eyebrow"><span></span> 청년의 오늘을 위한 정책 큐레이션</div>
+        <h1>놓치고 있던 혜택,<br><em>한곳에서</em> 찾아보세요.</h1>
+        <p>취업부터 주거, 금융, 복지까지. 복잡한 청년정책을<br class="desktop-only"> 내 상황에 맞게 쉽고 빠르게 탐색하세요.</p>
+        <form class="hero-search" id="searchForm" role="search">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+          <label class="sr-only" for="searchInput">정책 검색</label>
+          <input id="searchInput" type="search" placeholder="어떤 정책을 찾고 있나요? 예: 월세, 취업 지원" autocomplete="off">
+          <button type="submit">검색하기</button>
         </form>
-      </section>
-    </main>
+        <div class="quick-keywords" aria-label="추천 검색어">
+          <span>추천</span>
+          <button type="button" data-query="청년 월세"># 청년 월세</button>
+          <button type="button" data-query="취업 지원"># 취업 지원</button>
+          <button type="button" data-query="청년 적금"># 청년 적금</button>
+          <button type="button" data-query="창업"># 창업</button>
+        </div>
+      </div>
+      <aside class="hero-stat" aria-label="서비스 현황">
+        <span class="stat-icon">↗</span>
+        <div><small>지금 확인 가능한 정책</small><strong><span id="policyTotal">2,847</span><i>개</i></strong></div>
+        <span class="live"><i></i> 매일 업데이트</span>
+      </aside>
+    </section>
 
-    <script>
-      const drawBtn = document.getElementById('drawBtn');
-      const resetBtn = document.getElementById('resetBtn');
-      const numberArea = document.getElementById('numberArea');
-      const themeToggle = document.getElementById('themeToggle');
+    <section class="category-section" aria-labelledby="categoryTitle">
+      <div class="section-heading compact"><div><span class="section-kicker">CATEGORY</span><h2 id="categoryTitle">관심 분야부터 골라보세요</h2></div><p>아이콘을 누르면 해당 정책만 모아볼 수 있어요.</p></div>
+      <div class="categories" id="categories">
+        <button class="category active" data-category="전체"><span class="cat-icon all">✦</span><b>전체</b><small>모든 정책</small></button>
+        <button class="category" data-category="일자리"><span class="cat-icon job">▣</span><b>일자리</b><small>취업 · 재직</small></button>
+        <button class="category" data-category="주거"><span class="cat-icon home">⌂</span><b>주거</b><small>주택 · 월세</small></button>
+        <button class="category" data-category="교육"><span class="cat-icon study">▤</span><b>교육</b><small>역량 · 장학</small></button>
+        <button class="category" data-category="복지"><span class="cat-icon welfare">♥</span><b>복지·문화</b><small>생활 · 건강</small></button>
+        <button class="category" data-category="금융"><span class="cat-icon finance">₩</span><b>금융</b><small>자산 · 대출</small></button>
+        <button class="category" data-category="창업"><span class="cat-icon startup">↗</span><b>창업</b><small>사업 · 지원</small></button>
+      </div>
+    </section>
 
-      function updateThemeButton(theme) {
-        const isDark = theme === 'dark';
-        const label = isDark ? '화이트 모드로 전환' : '다크 모드로 전환';
-        themeToggle.querySelector('span').textContent = isDark ? '☀️' : '🌙';
-        themeToggle.setAttribute('aria-label', label);
-        themeToggle.title = label;
-      }
+    <section class="policies-section" id="policies" aria-labelledby="policyTitle">
+      <div class="section-heading"><div><span class="section-kicker">RECOMMENDED</span><h2 id="policyTitle">지금 주목할 청년정책</h2><p>신청 기간과 혜택을 한눈에 확인해 보세요.</p></div><div class="list-actions"><span id="resultLabel">전체 정책</span><select id="sortSelect" aria-label="정렬 기준"><option value="recommended">추천순</option><option value="deadline">마감임박순</option><option value="latest">최신순</option></select></div></div>
+      <div class="status-message" id="statusMessage" role="status"><span></span> 온통청년 데이터를 확인하고 있어요.</div>
+      <div class="policy-grid" id="policyGrid" aria-live="polite"></div>
+      <button class="more-button" id="moreButton" type="button">정책 더 보기 <span>↓</span></button>
+    </section>
 
-      function setTheme(theme) {
-        document.documentElement.dataset.theme = theme;
-        localStorage.setItem('theme', theme);
-        updateThemeButton(theme);
-      }
+    <section class="content-section" id="content" aria-labelledby="contentTitle">
+      <div class="content-copy"><span class="section-kicker">YOUTH CONTENT</span><h2 id="contentTitle">정책이 어려울 땐,<br>쉬운 이야기부터.</h2><p>청년의 일상에 바로 도움이 되는 정보만 골라<br>읽기 쉽게 정리했어요.</p><a href="https://www.youthcenter.go.kr/youthNews/ythTips/ythTipsList" target="_blank" rel="noopener">콘텐츠 전체 보기 <span>→</span></a></div>
+      <div class="content-cards" id="contentGrid"></div>
+    </section>
 
-      updateThemeButton(document.documentElement.dataset.theme);
+    <section class="guide" id="guide">
+      <div><span class="guide-badge">청년나침반 활용법</span><h2>정책을 찾고, 비교하고,<br>놓치지 마세요.</h2></div>
+      <ol><li><span>01</span><div><b>관심 분야 선택</b><p>내게 필요한 분야를 먼저 골라요.</p></div></li><li><span>02</span><div><b>조건과 혜택 확인</b><p>핵심 정보만 빠르게 비교해요.</p></div></li><li><span>03</span><div><b>관심 정책 저장</b><p>마감 전에 다시 확인해요.</p></div></li></ol>
+    </section>
+  </main>
 
-      themeToggle.addEventListener('click', () => {
-        const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-        setTheme(nextTheme);
-      });
+  <footer><div class="footer-inner"><div><a class="brand footer-brand" href="#"><span class="brand-mark"><span></span></span><span>청년나침반</span></a><p>청년의 가능성이 정책과 만나는 곳.</p></div><div class="footer-links"><a href="#policies">정책 찾기</a><a href="#content">청년 콘텐츠</a><a href="https://www.youthcenter.go.kr/cmnFooter/openapiIntro/oaiGuide" target="_blank" rel="noopener">데이터 출처</a></div><p class="copyright">데이터 제공: 온통청년 · © 2026 청년나침반</p></div></footer>
 
-      function drawNumbers() {
-        const numbers = new Set();
-
-        while (numbers.size < 6) {
-          numbers.add(Math.floor(Math.random() * 45) + 1);
-        }
-
-        const sorted = [...numbers].sort((a, b) => a - b);
-        renderNumbers(sorted);
-      }
-
-      function renderNumbers(numbers) {
-        numberArea.innerHTML = '';
-
-        numbers.forEach((number) => {
-          const ball = document.createElement('div');
-          ball.className = 'ball';
-          ball.textContent = number;
-          numberArea.appendChild(ball);
-        });
-      }
-
-      drawBtn.addEventListener('click', drawNumbers);
-      resetBtn.addEventListener('click', () => {
-        numberArea.innerHTML = '<div class="empty">아직 추첨되지 않았어요.</div>';
-      });
-    </script>
-  </body>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
 </html>
