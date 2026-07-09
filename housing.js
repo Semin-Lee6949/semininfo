@@ -24,6 +24,17 @@ function normalizeDate(value){
   const match=raw.match(/(\d{4})[.-]?(\d{2})[.-]?(\d{2})/);
   return match?`${match[1]}-${match[2]}-${match[3]}`:raw;
 }
+function normalizedDates(item,keys){
+  return keys.map(key=>normalizeDate(item?.[key])).filter(Boolean);
+}
+function minDate(item,keys){
+  const dates=normalizedDates(item,keys).sort();
+  return dates[0]||'';
+}
+function maxDate(item,keys){
+  const dates=normalizedDates(item,keys).sort();
+  return dates.at(-1)||'';
+}
 function todayKst(){const now=new Date();return new Date(now.toLocaleDateString('en-CA',{timeZone:'Asia/Seoul'})).getTime()}
 function inferTags(item,text){
   const tags=new Set(Array.isArray(item.tags)?item.tags:[]);
@@ -43,8 +54,8 @@ function normalizeHousing(item,index){
   const company=clean(pick(item,['건설업체명_시공사','사업주체명_시행사','BSNS_MBY_NM'],''));
   const summary=clean(pick(item,['summary','description'],location||company||'공급 위치와 신청 조건은 원문 공고에서 확인해 주세요.'));
   const recruitDate=normalizeDate(pick(item,['모집공고일','RCRIT_PBLANC_DE','pblancDate','recruitDate','PBLANC_DE']));
-  const applyStart=normalizeDate(pick(item,['청약접수시작일','특별공급접수시작일','해당지역1순위접수시작일','SUBSCRPT_RCEPT_BGNDE','RCEPT_BGNDE','applyStart','SPSPLY_RCEPT_BGNDE']));
-  const applyEnd=normalizeDate(pick(item,['청약접수종료일','특별공급접수종료일','해당지역2순위접수종료일','기타지역2순위접수종료일','SUBSCRPT_RCEPT_ENDDE','RCEPT_ENDDE','applyEnd','SPSPLY_RCEPT_ENDDE']));
+  const applyStart=minDate(item,['청약접수시작일','특별공급접수시작일','해당지역1순위접수시작일','해당지역2순위접수시작일','기타지역1순위접수시작일','기타지역2순위접수시작일','SUBSCRPT_RCEPT_BGNDE','RCEPT_BGNDE','applyStart','SPSPLY_RCEPT_BGNDE']);
+  const applyEnd=maxDate(item,['청약접수종료일','특별공급접수종료일','해당지역1순위접수종료일','해당지역2순위접수종료일','기타지역1순위접수종료일','기타지역2순위접수종료일','SUBSCRPT_RCEPT_ENDDE','RCEPT_ENDDE','applyEnd','SPSPLY_RCEPT_ENDDE']);
   const households=clean(pick(item,['공급규모','TOT_SUPLY_HSHLDCO','SUPLY_HSHLDCO','households','supplyCount'],'공고 확인'));
   const text=`${name} ${area} ${type} ${summary} ${clean(JSON.stringify(item))}`;
   return {id:String(pick(item,['주택관리번호','공고번호','id','PBLANC_NO','pblancNo','HOUSE_MANAGE_NO'],`housing-${index}`)),area,type,name,summary,recruitDate,applyStart,applyEnd,households,tags:inferTags(item,text),url:pick(item,['모집공고홈페이지주소','홈페이지주소','url','PBLANC_URL','DETAIL_URL'],'https://www.applyhome.co.kr')};
@@ -75,17 +86,20 @@ function render(){
   $('#housingGrid').innerHTML=items.slice(0,state.visible).map(item=>`<article class="housing-card"><div class="housing-card-top"><span class="housing-tag primary">${escapeHtml(item.type)}</span><span class="housing-tag">${escapeHtml(item.tags[0]||'공고')}</span><span class="housing-area">${escapeHtml(item.area)}</span></div><h3>${escapeHtml(item.name)}</h3><p>${escapeHtml(item.summary)}</p><div class="housing-card-meta"><span>접수 기간<b>${escapeHtml(item.applyStart||'공고 확인')} ~ ${escapeHtml(item.applyEnd||'공고 확인')}</b></span><span>공급 규모<b>${escapeHtml(item.households)}</b></span></div><a class="housing-card-link" href="${safeUrl(item.url)}" target="_blank" rel="noopener">원문 보기 <span>→</span></a></article>`).join('')||'<div class="empty-state">조건에 맞는 청약 공고가 없어요.<br>검색어나 필터를 바꿔보세요.</div>';
   $('#housingMore').style.display=items.length>state.visible?'block':'none';
 }
+function applyHousingData(data){
+  const items=deepItems(data).filter(item=>clean(pick(item,['주택명','HOUSE_NM','houseNm','hsmpNm','pblancNm','SUPLY_NM','name','title'])));
+  if(!items.length)throw new Error('usable fields empty');
+  state.items=items.map(normalizeHousing);
+  const openCount=state.items.filter(isOpenOrUpcoming).length;
+  setStatus(`동기화된 주택청약 데이터 ${state.items.length.toLocaleString()}건을 확인했습니다. 현재 접수중·예정 공고는 ${openCount.toLocaleString()}건입니다.`,'ok');
+}
 async function loadHousing(){
   try{
     const response=await fetch('data/housing.json',{headers:{Accept:'application/json'},cache:'no-cache'});
     if(!response.ok)throw new Error(`DATA ${response.status}`);
-    const data=await response.json();
-    const items=deepItems(data).filter(item=>clean(pick(item,['주택명','HOUSE_NM','houseNm','hsmpNm','pblancNm','SUPLY_NM','name','title'])));
-    if(!items.length)throw new Error('usable fields empty');
-    state.items=items.map(normalizeHousing);
-    setStatus('주택청약 최신 데이터로 업데이트했습니다.','ok');
+    applyHousingData(await response.json());
   }catch(error){
-    setStatus('주택청약 실시간 데이터를 불러오지 못해 미리보기 데이터로 표시합니다.','warn');
+    setStatus('주택청약 동기화 데이터를 불러오지 못해 미리보기 데이터로 표시합니다.','warn');
   }
   render();
 }

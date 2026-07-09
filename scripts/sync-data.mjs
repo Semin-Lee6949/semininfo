@@ -1,17 +1,47 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 
+const HOUSING_PAGE_SIZE = 1000;
+
 const feeds = {
   policy: { path: '/go/ythip/getPlcy', key: process.env.YOUTH_POLICY_API_KEY },
   content: { path: '/go/ythip/getContent', key: process.env.YOUTH_CONTENT_API_KEY },
   housing: {
     url: process.env.HOUSING_SUBSCRIPTION_API_URL || 'https://api.odcloud.kr/api/15101046/v1/uddi:14a46595-03dd-47d3-a418-d64e52820598',
     key: process.env.HOUSING_SUBSCRIPTION_API_KEY,
-    params: { page: '1', perPage: '100', returnType: 'JSON' }
+    params: { page: '1', perPage: String(HOUSING_PAGE_SIZE), returnType: 'JSON' }
   }
 };
 
 await mkdir('data', { recursive: true });
 let failures = 0;
+
+async function fetchJson(url) {
+  const response = await fetch(url, { headers: { Accept: 'application/json' }, signal: AbortSignal.timeout(30000) });
+  const type = response.headers.get('content-type') || '';
+  if (!response.ok || !type.includes('application/json')) throw new Error(`HTTP ${response.status} ${type}`);
+  return response.json();
+}
+
+async function fetchHousingData(feed) {
+  const url = new URL(feed.url);
+  url.searchParams.set('serviceKey', feed.key);
+  url.searchParams.set('page', '1');
+  url.searchParams.set('perPage', String(HOUSING_PAGE_SIZE));
+  url.searchParams.set('returnType', 'JSON');
+
+  const first = await fetchJson(url);
+  const allItems = Array.isArray(first.data) ? [...first.data] : [];
+  const total = Number(first.totalCount || first.matchCount || allItems.length);
+  const pages = Math.ceil(total / HOUSING_PAGE_SIZE);
+
+  for (let page = 2; page <= pages; page++) {
+    url.searchParams.set('page', String(page));
+    const data = await fetchJson(url);
+    if (Array.isArray(data.data)) allItems.push(...data.data);
+  }
+
+  return { ...first, currentCount: allItems.length, data: allItems };
+}
 
 for (const [name, feed] of Object.entries(feeds)) {
   if (!feed.key) { console.error(`${name}: API 키가 없습니다.`); failures++; continue; }
@@ -26,10 +56,7 @@ for (const [name, feed] of Object.entries(feeds)) {
     url.searchParams.set('rtnType', 'json');
   }
   try {
-    const response = await fetch(url, { headers: { Accept: 'application/json' }, signal: AbortSignal.timeout(30000) });
-    const type = response.headers.get('content-type') || '';
-    if (!response.ok || !type.includes('application/json')) throw new Error(`HTTP ${response.status} ${type}`);
-    const data = await response.json();
+    const data = name === 'housing' ? await fetchHousingData(feed) : await fetchJson(url);
     const items = name === 'policy'
       ? data?.result?.youthPolicyList
       : name === 'content'
