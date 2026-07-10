@@ -1,0 +1,40 @@
+name: Sync news data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/30 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-news-data-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch Naver news data
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          NAVER_NEWS_QUERIES: ${{ vars.NAVER_NEWS_QUERIES }}
+        run: node scripts/sync-news-data.mjs
+      - name: Commit refreshed news
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/news.json
+          if git diff --cached --quiet; then
+            echo "No news changes to commit"
+            exit 0
+          fi
+          git commit -m "Update news data"
+          git pull --rebase origin main
+          git push origin HEAD:main
