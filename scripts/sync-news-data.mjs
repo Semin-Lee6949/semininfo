@@ -9,8 +9,8 @@ const DEFAULT_QUERIES = [
   { query: '청년 복지 생활', category: '생활' }
 ];
 
-const clientId = process.env.NAVER_CLIENT_ID;
-const clientSecret = process.env.NAVER_CLIENT_SECRET;
+const clientId = process.env.NAVER_CLIENT_ID?.trim();
+const clientSecret = process.env.NAVER_CLIENT_SECRET?.trim();
 const display = Number(process.env.NAVER_NEWS_DISPLAY || 20);
 const queries = parseQueries(process.env.NAVER_NEWS_QUERIES);
 
