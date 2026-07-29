@@ -1,6 +1,6 @@
 {
   "source": "네이버 뉴스 검색 API",
-  "syncedAt": "2026-07-28T09:48:48.654Z",
+  "syncedAt": "2026-07-29T10:13:30.732Z",
   "queries": [
     {
       "query": "청년정책",
@@ -23,241 +23,502 @@
       "category": "생활"
     }
   ],
-  "total": 89,
+  "total": 91,
   "items": [
     {
-      "title": "전주 <b>청년</b>만원주택 ‘청춘별채’ 141호로 확대…평화동 신축주택 첫 입...",
-      "originallink": "https://www.segye.com/newsView/20260728516369?OutUrl=naver",
-      "link": "https://n.news.naver.com/mnews/article/022/0004146589?sid=102",
-      "description": "것은 <b>청년</b>이 전주에 머물고 정착할 수 있는 기반을 마련하는 일”이라며 “<b>청년</b>임대주택 공급을 지속 확대하고 <b>청년</b> 눈높이에 맞는 다양한 주거복지 <b>정책</b>을 추진해 <b>청년</b>이 살기 좋은 도시를 만들 계획”이라고 말했다.",
-      "pubDate": "Tue, 28 Jul 2026 18:47:00 +0900",
+      "title": "[특별기고] ‘해양수도’ 빈칸 문화콘텐츠 산업으로 채우자",
+      "originallink": "http://www.kookje.co.kr/news2011/asp/newsbody.asp?code=1700&key=20260730.22018007910",
+      "link": "https://n.news.naver.com/mnews/article/658/0000150907?sid=110",
+      "description": "<b>청년</b>들을 부산에 머물게 할 또 다른 경제적 축, 즉 ‘문화콘텐츠 산업’의 육성이 반드시 병행되어야 하는 이유다. 하지만 당선 이후 인수위원회가 내놓은 청사진을 현장의 눈높이에서 보면 짙은 아쉬움이 남는다. <b>정책</b>의... ",
+      "pubDate": "Wed, 29 Jul 2026 19:12:00 +0900",
       "category": "정책",
-      "source": "segye.com"
+      "source": "kookje.co.kr"
     },
     {
-      "title": "입장도 없이 무슨 선명성 경쟁",
-      "originallink": "https://h21.hani.co.kr/arti/politics/politics_general/59666.html",
-      "link": "https://n.news.naver.com/mnews/article/036/0000053956?sid=162",
-      "description": "<b>청년</b> 문제를 젠더 갈등으로, 교육권 추락 문제를 교사와 학부모의 대립으로, 정규직 부족 문제를 세대 간... 그러나 지금의 민주당에는 사람과 이익(주로 공천)에 따라 이합집산하는 계파만 남고, 이념과 <b>정책</b>, 노선에 따라... ",
-      "pubDate": "Tue, 28 Jul 2026 18:46:00 +0900",
+      "title": "[기고] '10월항쟁 80주년' 10월의 항쟁정신, 오늘로 이어받아",
+      "originallink": "http://worknworld.kctu.org/news/articleView.html?idxno=509737",
+      "link": "http://worknworld.kctu.org/news/articleView.html?idxno=509737",
+      "description": "10월항쟁 원인은...미군정의 잘못된 점령<b>정책</b>으로 친일파 재등용, 쌀가격 폭등 1945년 8월 15일 일제는... 우리 민족은 특히 친일경찰에 분노했는데 이들은 일본강점기 때 우리 <b>청년</b>을 징용·징병하고 여성들을 정신대에... ",
+      "pubDate": "Wed, 29 Jul 2026 19:08:00 +0900",
       "category": "정책",
-      "source": "h21.hani.co.kr"
+      "source": "worknworld.kctu.org"
     },
     {
-      "title": "일자리·주거·복지 한눈에…노동부, <b>청년정책</b> 안내서 발간",
-      "originallink": "https://biz.sbs.co.kr/article_hub/20000325192?division=NAVER",
-      "link": "https://n.news.naver.com/mnews/article/374/0000524221?sid=101",
-      "description": "고용노동부는 <b>청년 정책</b> 안내서 ‘알기 쉬운 <b>청년 정책</b>.zip’을 발간했다고 오늘(28일) 밝혔습니다. 이번 안내서에는 취업 준비 청년이 활용할 수 있는 일자리 지원사업이 담겼습니다. 청년 뉴딜과 주거, 교육, 금융, 복지... ",
-      "pubDate": "Tue, 28 Jul 2026 18:45:00 +0900",
+      "title": "李대통령 ‘17억 근저당 논란’에…이억원 “사인간 거래, 구체적 내용...",
+      "originallink": "https://www.dt.co.kr/article/12075559?ref=naver",
+      "link": "https://n.news.naver.com/mnews/article/029/0003039700?sid=100",
+      "description": "현행 고강도 대출 규제와 실수요자 지원 <b>정책</b>에 대해서는 “총량 규제는 유지하되 실수요자와 서민, <b>청년</b>이 겪는 어려움은 핀셋 지원을 통해 해소해 나갈 계획”이라고 설명했다. 최근 은행권이 자체적으로 주택담보대출... ",
+      "pubDate": "Wed, 29 Jul 2026 19:08:00 +0900",
       "category": "정책",
-      "source": "biz.sbs.co.kr"
+      "source": "dt.co.kr"
     },
     {
-      "title": "노동장관, <b>청년</b>취업지원 점검…8개 지방청 순회 간담회",
-      "originallink": "https://biz.sbs.co.kr/article_hub/20000325188?division=NAVER",
-      "link": "https://n.news.naver.com/mnews/article/374/0000524217?sid=101",
-      "description": "김영훈 고용노동부 장관이 서울지방고용노동청을 찾아 <b>청년</b> 취업 지원과 노동·산업안전 <b>정책</b> 추진 상황을 점검했습니다. 고용노동부는 김 장관이 오늘(28일) 서울지방고용노동청을 방문해 8개 지방청 순회 간담회 마지막... ",
-      "pubDate": "Tue, 28 Jul 2026 18:45:00 +0900",
+      "title": "김제시, <b>청년</b> 및 신혼부부 행복주택 임대보증금 지원",
+      "originallink": "https://sjbnews.com/news/news.php?number=884045",
+      "link": "https://sjbnews.com/news/news.php?number=884045",
+      "description": "지원사업이 <b>청년</b>과 신혼부부의 새로운 시작에 든든한 발판이 되길 바란다”라며, “<b>청년</b>과 신혼부부가 주거비 부담으로 인해 꿈을 포기하는 일이 없도록 실질적인 주거복지 <b>정책</b>을 확대해 나가겠다”고 밝혔다./김제=",
+      "pubDate": "Wed, 29 Jul 2026 19:05:00 +0900",
       "category": "정책",
-      "source": "biz.sbs.co.kr"
+      "source": "sjbnews.com"
     },
     {
-      "title": "고창군, <b>청년정책</b>협의체 3분기 총회 개최…30명 위원 참석해 현안 논의",
-      "originallink": "http://www.ttlnews.com/news/articleView.html?idxno=3129306",
-      "link": "http://www.ttlnews.com/news/articleView.html?idxno=3129306",
-      "description": "고창군이 7월 23일 고창읍사무소 2층 회의실에서 청년위원 및 관계자들이 참석한 가운데 2026년 3분기 <b>청년정책</b>협의체 정기총회를 열었다. 정기총회 현장에는 청년 대표로 위촉된 30여 명의 위원이 참석해 고창군 <b>청년정책</b>... ",
-      "pubDate": "Tue, 28 Jul 2026 18:44:00 +0900",
+      "title": "[경기 단체장] 최현덕 남양주시장 인터뷰",
+      "originallink": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3030214",
+      "link": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3030214",
+      "description": "그동안 많은 <b>정책</b>이 행정 편의와 관행에 따라 추진, 정작 시민이 체감하는 변화는 부족했다는 문제의식이... 왕숙 첨단클러스터를 중심으로 혁신기업과 <b>청년</b>창업, 연구개발 기능이 융합된 미래산업 거점을 조성하는 것이... ",
+      "pubDate": "Wed, 29 Jul 2026 19:04:00 +0900",
       "category": "정책",
-      "source": "ttlnews.com"
+      "source": "kihoilbo.co.kr"
     },
     {
-      "title": "광주 노무현시민학교 강연 연다",
-      "originallink": "https://www.kfenews.co.kr/news/articleView.html?idxno=661366",
-      "link": "https://www.kfenews.co.kr/news/articleView.html?idxno=661366",
-      "description": "강사로 나서는 황희두 이사는 미디어 활동가이자 <b>청년 정책</b> 전문가로 활동하며 다양한 사회 현안에 대해 시민들과 활발한 소통을 이어오고 있다. 노무현재단 광주지역위원회는 올해 노무현 전 대통령 탄생 80주년을 맞아... ",
-      "pubDate": "Tue, 28 Jul 2026 18:44:00 +0900",
+      "title": "[경기 단체장] 이재준 수원특례시장 인터뷰",
+      "originallink": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3030215",
+      "link": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3030215",
+      "description": "글로벌 네트워킹 지원, 수원기업새빛펀드, 수출개척단, 원스톱 수출지원 등 다양한 수원시 기업지원 <b>정책</b>에 참여하며 우수한 성과를 창출한 <b>청년</b> 기업인들이었다. <b>청년</b> 벤처기업인들은 사업을 하면서 많은 어려움을... ",
+      "pubDate": "Wed, 29 Jul 2026 19:04:00 +0900",
       "category": "정책",
-      "source": "kfenews.co.kr"
+      "source": "kihoilbo.co.kr"
     },
     {
-      "title": "공노총, 내년도 공무원 임금인상요구 관련 전재수 부산시장과 <b>정책</b>간담...",
-      "originallink": "http://www.lawissue.co.kr/view.php?ud=2026072818365088919a8c8bf58f_12",
-      "link": "http://www.lawissue.co.kr/view.php?ud=2026072818365088919a8c8bf58f_12",
-      "description": "<b>청년</b> 공무원을 비롯한 120만 공무원이 공직사회에서 내일을 꿈꿀 수있도록 정부와 여당에 관련 의견을 전달하도록 노력하겠다&quot;라고 말했다. 한편 공노총은 이날 전재수 부산시장과 <b>정책</b>간담회를 시작으로 향후 추미애... ",
-      "pubDate": "Tue, 28 Jul 2026 18:44:00 +0900",
+      "title": "부안군, 군민체감형 100일 실행계획?공약 실천계획 보고회 개최",
+      "originallink": "https://sjbnews.com/news/news.php?number=884032",
+      "link": "https://sjbnews.com/news/news.php?number=884032",
+      "description": "문화·생활 분야에서는 문화ON 프로젝트와 부안 문화패스, 역사문화 체험 프로그램 등 문화복지 <b>정책</b>을 확대하는 한편, 마을방범 CCTV 확충, <b>청년</b>특화주택 100세대 공급, 심성제 생활체육시설 조성 등 생활밀착형 사업을... ",
+      "pubDate": "Wed, 29 Jul 2026 19:04:00 +0900",
       "category": "정책",
-      "source": "lawissue.co.kr"
+      "source": "sjbnews.com"
     },
     {
-      "title": "<b>청년</b>들에게 든든한 디딤돌...중구, 올해 처음 '취약계층 <b>청년</b> 도약장려...",
-      "originallink": "https://www.cnbizm.com/news/articleView.html?idxno=309876",
-      "link": "https://www.cnbizm.com/news/articleView.html?idxno=309876",
-      "description": "어려움 속에서도 꿈을 향해 나아가는 <b>청년</b>들에게 든든한 디딤돌이 되길 바란다&quot;며, &quot;앞으로도 <b>청년</b>들이 마음껏 가능성을 펼치고 당당히 사회로 나아갈 수 있도록 <b>청년</b>의 곁에서 힘이 되는 <b>정책</b>을 펼쳐 나가겠다&quot;고 말했다.",
-      "pubDate": "Tue, 28 Jul 2026 18:44:00 +0900",
+      "title": "이억원 &quot;대출 풀어 주거 사다리 멀어지는 구조 양산 안 돼&quot;",
+      "originallink": "https://www.ebn.co.kr/news/articleView.html?idxno=1718295",
+      "link": "https://www.ebn.co.kr/news/articleView.html?idxno=1718295",
+      "description": "다만 열심히 노력하는 실거주자와 <b>청년</b> 등 실수요자를 위한 '핀셋 지원'은 지속하겠다는 방침을 분명히 했다.... 금융당국은 잔금대출과 관련해 어떠한 <b>정책</b>적 전환을 한 적이 없으며, 현재도 기존 규제 테두리 안에서... ",
+      "pubDate": "Wed, 29 Jul 2026 19:02:00 +0900",
       "category": "정책",
-      "source": "cnbizm.com"
+      "source": "ebn.co.kr"
     },
     {
-      "title": "김장겸 &quot;언론 통제하면 독재국가 … 표현의 자유, 끝까지 지킬 것&quot;",
-      "originallink": "https://www.newdaily.co.kr/site/data/html/2026/07/28/2026072800286.html",
-      "link": "https://www.newdaily.co.kr/site/data/html/2026/07/28/2026072800286.html",
-      "description": "김 의원은 28일 유튜브 채널 뉴데일리TV '이슈프레소'에 출연해 이재명 정부의 부동산 <b>정책</b> 및 언론관을 강하게 비판하는 한편, AI 시대 교육과 청소년 SNS <b>정책</b>, <b>청년</b> 정치 등 미래 과제에 대한 자신의 입법 구상도 함께... ",
-      "pubDate": "Tue, 28 Jul 2026 18:40:00 +0900",
+      "title": "금강유역환경청, <b>청년</b> 환경·에너지 인재 간담회 개최",
+      "originallink": "http://www.cctimes.kr/news/articleView.html?idxno=919184",
+      "link": "http://www.cctimes.kr/news/articleView.html?idxno=919184",
+      "description": "마재정 청장은 &quot;<b>청년</b>은 환경·에너지 <b>정책</b>의 실질적인 당사자로서 이번 간담회를 통해 참신한 <b>정책</b> 아이디어를 직접 청취할 수 있게 되어 매우 뜻깊다&quot;며 &quot;지역 인재들의 사회 진출을 위해 필요한 도움을 아끼지 않을 것... ",
+      "pubDate": "Wed, 29 Jul 2026 19:02:00 +0900",
       "category": "정책",
-      "source": "newdaily.co.kr"
+      "source": "cctimes.kr"
     },
     {
-      "title": "6년간 부산 <b>청년</b> 예산 4배 늘었지만 <b>청년</b> 태반은 지원책 존재조차 몰라",
-      "originallink": "https://www.busan.com/view/busan/view.php?code=2026072818361894482",
-      "link": "https://n.news.naver.com/mnews/article/082/0001391690?sid=102",
-      "description": "부산시가 최근 6년간 <b>청년정책</b> 예산을 4배 가까이 늘리며 전국 최고 수준의 정책 의지를 보여줬지만, 정작 수요자인 청년들은 사업 대부분을 알지 못하는 것으로 나타났다. 청년 인구가 감소세임을 감안해 양적 성장을... ",
-      "pubDate": "Tue, 28 Jul 2026 18:39:00 +0900",
+      "title": "[의정칼럼] 제주농업의 미래는 <b>청년</b>농에게 달려 있다",
+      "originallink": "https://www.jemin.com/news/articleView.html?idxno=841068",
+      "link": "https://www.jemin.com/news/articleView.html?idxno=841068",
+      "description": "초기 시설투자와 영농 기반 조성에 필요한 <b>정책</b>금융도 <b>청년</b>농의 현실을 반영해 보다 과감하고 실효성 있게 개선돼야 한다. 또한 스마트농업과 디지털 기술을 활용한 <b>청년</b>들이 쉽게 도전할 수 있는 디지털 기반의... ",
+      "pubDate": "Wed, 29 Jul 2026 19:02:00 +0900",
       "category": "정책",
-      "source": "busan.com"
+      "source": "jemin.com"
     },
     {
-      "title": "합천군, <b>청년</b>·신혼부부 행복주택 준공…“정주여건 개선·인구유입 기...",
-      "originallink": "https://www.kukinews.com/article/view/kuk202607280165",
-      "link": "https://www.kukinews.com/article/view/kuk202607280165",
-      "description": "지원과 <b>청년 정책</b>을 지속적으로 확대해 나가겠다&quot;고 말했다. 합천군은 행복주택 준공을 계기로 청년층 정주여건 개선과 맞춤형 <b>청년정책</b>을 지속적으로 발굴·추진해 ‘젊은 합천’ 조성에 행정력을 집중할 계획이다. 합천=",
-      "pubDate": "Tue, 28 Jul 2026 18:38:00 +0900",
-      "category": "정책",
-      "source": "kukinews.com"
-    },
-    {
-      "title": "민주 당권 주자들 충청 잡기 '사활'",
-      "originallink": "https://www.cctoday.co.kr/news/articleView.html?idxno=2233959",
-      "link": "https://www.cctoday.co.kr/news/articleView.html?idxno=2233959",
-      "description": "조직·<b>정책</b> 경쟁에 화력을 집중하는 모습이다.28일 민주당에 따르면 이날부터 대전·세종·충남·충북 지역... 송 후보는 충주 당원 간담회와 청주·대전 타운홀미팅을 진행한 데 이어 대전지역 2030 <b>청년</b>들과 '치맥 데이트'를... ",
-      "pubDate": "Tue, 28 Jul 2026 18:38:00 +0900",
-      "category": "정책",
-      "source": "cctoday.co.kr"
-    },
-    {
-      "title": "위덕대, 자립준비<b>청년</b> 맞춤형 진로·<b>취업</b>지원 프로그램 운영",
-      "originallink": "https://www.hidomin.com/news/articleView.html?idxno=715079",
-      "link": "https://www.hidomin.com/news/articleView.html?idxno=715079",
-      "description": "진로·<b>취업</b>지원 프로그램을 지속적으로 운영하겠다&quot;고 말했다. 한편 위덕대학교 대학<b>일자리</b>플러스센터는 지역 <b>청년</b>과 재학생을 대상으로 진로설계와 <b>취업</b>지원, 현장실무 교육 등 다양한 맞춤형 프로그램을 운영하고 있다.",
-      "pubDate": "Tue, 28 Jul 2026 18:38:00 +0900",
+      "title": "대전 대덕구, 신탄진 <b>청년</b>창업지원센터 개관",
+      "originallink": "http://www.cctimes.kr/news/articleView.html?idxno=919179",
+      "link": "http://www.cctimes.kr/news/articleView.html?idxno=919179",
+      "description": "▲ 대전 대덕구청 제공 대전 대덕구가 <b>청년</b>들이 창업에 도전할 수 있도록 지역에 새로운 지원 거점을... 4개월간 직업상담사를 배치해 구인·구직 상담과 함께 <b>취업</b> 및 창업을 연계한 맞춤형 <b>일자리</b> 서비스를 제공한다. /대전",
+      "pubDate": "Wed, 29 Jul 2026 19:02:00 +0900",
       "category": "일자리",
-      "source": "hidomin.com"
+      "source": "cctimes.kr"
     },
     {
-      "title": "딜리셔스, '신상마켓' 독점력으로 네이버·산은·VC 사로잡았다",
-      "originallink": "https://www.greened.kr/news/articleView.html?idxno=346144",
-      "link": "https://www.greened.kr/news/articleView.html?idxno=346144",
-      "description": "금융감독원 전자공시에 따르면 딜리셔스에는 ▲네이버 140만6100주(6.43%) ▲KT-DSC창조경제 <b>청년</b>창업... 한국산업은행의 투자 역시 동대문 패션 산업의 디지털 전환과 소상공인 생태계 효율화라는 <b>정책</b>적 목적과 맞닿아... ",
-      "pubDate": "Tue, 28 Jul 2026 18:32:00 +0900",
+      "title": "[경제 오딧세이]신현송 한국은행 총재 &quot;견조한 성장세 지속할 것&quot;",
+      "originallink": "https://news.bbsi.co.kr/news/articleView.html?idxno=4097742",
+      "link": "https://news.bbsi.co.kr/news/articleView.html?idxno=4097742",
+      "description": "&quot;한국은행은 이와 같은 제반 <b>정책</b>여건을 고려하여 지난 7월 회의에서 기준금리를 2.5%에서 2.75%로... 이 대통령은 다만 &quot;이런 경이적 숫자들의 이면에는 <b>청년</b> 고용 부진과 중소기업의 높은 대출 연체율 같은 어두운... ",
+      "pubDate": "Wed, 29 Jul 2026 19:00:00 +0900",
       "category": "정책",
-      "source": "greened.kr"
+      "source": "news.bbsi.co.kr"
     },
     {
-      "title": "(인사) 의성군 승진 및 전보, 신규 임용 등 인사",
-      "originallink": "https://www.getnews.co.kr/news/articleView.html?idxno=876334",
-      "link": "https://www.getnews.co.kr/news/articleView.html?idxno=876334",
-      "description": "전준규 ▲<b>청년정책</b>과 김형진 ▲통합돌봄과 배미정 ▲통합돌봄과 성봉걸 ▲건축과 권종열 ▲환경축산과 오은정 ▲산림녹지과 박현진 ▲보건정책과 석지은 &lt;7급 승진&gt; - 14명 ▲홍보과 김태훈 ▲기획예산과 김주은... ",
-      "pubDate": "Tue, 28 Jul 2026 18:30:00 +0900",
+      "title": "이억원 &quot;銀, 총량 관리 규제 맞춰 대출 조인 것&quot;",
+      "originallink": "https://weekly.hankooki.com/news/articleView.html?idxno=7176592",
+      "link": "https://weekly.hankooki.com/news/articleView.html?idxno=7176592",
+      "description": "서민·<b>청년</b>의 애로사항은 핀셋 지원을 통해 해소하려 한다&quot;고 말했다. 최근 은행권의 주택담보대출 한도 축소로 일부 차주가 잔금대출에 어려움을 겪고 있다는 지적은 일축했다. 그는 &quot;잔금대출은 저희가 무슨 <b>정책</b>을... ",
+      "pubDate": "Wed, 29 Jul 2026 19:00:00 +0900",
       "category": "정책",
-      "source": "getnews.co.kr"
+      "source": "weekly.hankooki.com"
     },
     {
-      "title": "전남광주 부시장 시민추천제 후보 10명 확정…내달 1일부터 시민평가",
-      "originallink": "https://www.pressian.com/pages/articles/2026072818054052322?utm_source=naver&utm_medium=search",
-      "link": "https://n.news.naver.com/mnews/article/002/0002450048?sid=102",
-      "description": "시민주권·<b>청년</b>인구<b>정책</b>·인재육성·보건복지·양성평등 분야에서는 박향 보건복지부 공공보건<b>정책</b>관, 박현주 조선대학교 교수, 오미란 광주여성가족재단 대표, 윤난실 지방시대위원회 혁신자치전문위원장, 채은지 전... ",
-      "pubDate": "Tue, 28 Jul 2026 18:30:00 +0900",
+      "title": "신한라이프, 미<b>취업</b> <b>청년 취업</b> 경쟁력 제고 사업 참여",
+      "originallink": "https://www.datasom.co.kr/news/articleView.html?idxno=209309",
+      "link": "https://www.datasom.co.kr/news/articleView.html?idxno=209309",
+      "description": "신한라이프(대표이사 사장 천상영)는 최근 증가하고 있는 미<b>취업</b> <b>청년</b>들의 <b>일자리</b> 찾기를 돕기 위해 고용노동부가 주관하는 '2026 미래내일 일경험 사업'에 참여한다고 29일 밝혔다. 이 프로그램은 채용시장이 수시•경력직... ",
+      "pubDate": "Wed, 29 Jul 2026 19:00:00 +0900",
+      "category": "일자리",
+      "source": "datasom.co.kr"
+    },
+    {
+      "title": "내년 '기준 중위소득' 역대최고…인천시, 국비 매칭 지방비 부담 가중",
+      "originallink": "https://www.joongboo.com/news/articleView.html?idxno=363732668",
+      "link": "https://www.joongboo.com/news/articleView.html?idxno=363732668",
+      "description": "<b>청년</b>월세 지원 과 향후 추진될 기초연금 선정기준 개편 등 대부분의 <b>복지</b> 사업 수혜 대상까지 대폭... 올해는 국비매칭사업인 국민기초<b>생활</b>보장과 긴급<b>복지</b>지원 등에 638억 원, 아동수당 429억 원 등을 편성했다.... ",
+      "pubDate": "Wed, 29 Jul 2026 19:00:00 +0900",
+      "category": "생활",
+      "source": "joongboo.com"
+    },
+    {
+      "title": "&quot;정영두 신임 김해시장 행정철학&quot;...정기인사 단행",
+      "originallink": "https://www.pressian.com/pages/articles/2026072918561828559?utm_source=naver&utm_medium=search",
+      "link": "https://n.news.naver.com/mnews/article/002/0002450244?sid=102",
+      "description": "인구<b>청년정책</b>관 근무 ▲우미연 기획조정실 예산법무과장 ▲정서율 기획조정실 정보통신과장 ▲성소희 경제국 전략산업과장 ▲강미선 복지국 생활보장과장 ▲정영신 복지국 성평등가족과장 ▲김주연 복지국... ",
+      "pubDate": "Wed, 29 Jul 2026 18:58:00 +0900",
       "category": "정책",
       "source": "pressian.com"
     },
     {
-      "title": "[열린세상] 스마트팜 산업, 이젠 기술보다 제도를 혁신할 때",
-      "originallink": "https://www.jbnews.com/news/articleView.html?idxno=1508472",
-      "link": "https://www.jbnews.com/news/articleView.html?idxno=1508472",
-      "description": "스마트팜을 국가 수출 전략산업으로 육성하기 위해서는 해외 실증단지 조성, 국제인증 지원, 수출금융 확대, 현지 유지관리 체계 구축까지 포함한 종합적인 지원<b>정책</b>이 필요하다. <b>청년</b>농과 기업, 연구기관이 함께 성장하는... ",
-      "pubDate": "Tue, 28 Jul 2026 18:26:00 +0900",
+      "title": "&quot;ESG 성패는 사람 관리에 달려…평가 체계부터 바꿔야&quot;",
+      "originallink": "https://www.hankyung.com/article/2026072939101",
+      "link": "https://n.news.naver.com/mnews/article/015/0005315374?sid=102",
+      "description": "산업<b>정책</b>연구원장(73·사진)은 29일 인터뷰에서 “ESG를 둘러싼 환경이 빠르게 변하고 있지만 환경·안전... LG는 10년 넘게 현지 <b>청년</b>들에게 전기·전자 기술교육을 지원했고 교육생들은 취업과 창업을 통해 자립 기반을... ",
+      "pubDate": "Wed, 29 Jul 2026 18:55:00 +0900",
       "category": "정책",
-      "source": "jbnews.com"
+      "source": "hankyung.com"
     },
     {
-      "title": "국립부경대·동서대·부산외대, 한-아세안 인재교류 협력 확대",
-      "originallink": "https://www.inthenews.co.kr/news/article.html?no=89878",
-      "link": "https://www.inthenews.co.kr/news/article.html?no=89878",
-      "description": "아세안 <b>청년</b> 커리어 멘토십 프로그램’을 공동 주최합니다. 이 프로그램은 부산 지역 대학에 입학한 아세안... 유학생 정착 지원과 취업 연계가 함께 추진되면 대학의 국제화 <b>정책</b>과 지역 인재 확보 전략을 동시에 보완할... ",
-      "pubDate": "Tue, 28 Jul 2026 18:24:00 +0900",
+      "title": "전남·광주 특별시민이 바라는 통합은 단연 ‘경제특별시’",
+      "originallink": "http://www.jndn.com/article.php?aid=1785318577436943001",
+      "link": "http://www.jndn.com/article.php?aid=1785318577436943001",
+      "description": "모든 가구에서 1순위는 기업 유치 및 양질의 일자리 확대였으나, 타 가구 대비 높은 기대를 나타낸 <b>정책</b>은 1인 가구의 경우 <b>청년</b> 정착 및 인구 유입 확대(14.1%), 부부가구는 지역 간 격차 완화 및 균형발전(12.4%)이었다. 또... ",
+      "pubDate": "Wed, 29 Jul 2026 18:52:00 +0900",
       "category": "정책",
-      "source": "inthenews.co.kr"
+      "source": "jndn.com"
     },
     {
-      "title": "정부 '<b>청년</b> 일자리 회복방안' 3분기 중 발표 예정",
-      "originallink": "http://www.joseilbo.com/news/news_read.php?uid=572795&class=1&grp=",
-      "link": "https://n.news.naver.com/mnews/article/123/0002387393?sid=101",
-      "description": "정부는 <b>청년</b> 미래인력을 양성하고, 일자리와 연결하는 내용의 <b>정책</b>을 준비하고 있다. <b>청년</b>이 취업 후 경력을 쌓고 성장하기 위한 세부 과제 등을 논의 중으로, 보완을 거쳐 3분기 안에 공개하기로 했다. <b>청년</b> 일자리... ",
-      "pubDate": "Tue, 28 Jul 2026 18:20:00 +0900",
+      "title": "[기자수첩] '최후의 수단'까지 내몰린 이재명 정부 부동산 <b>정책</b>",
+      "originallink": "https://www.newspim.com/news/view/20260729001050",
+      "link": "https://www.newspim.com/news/view/20260729001050",
+      "description": "이재명 정부의 부동산 <b>정책</b>이 <b>청년</b>층의 '주거 사다리'를 걷어찬다는 비판이 나오는 이유다. ◆세제 개편 전월세 시장으로 튈때 <b>청년</b>엔 절망적 이번 부동산 세제 개편의 압력이 전·월세 시장으로 튄다고 예상해 보자.... ",
+      "pubDate": "Wed, 29 Jul 2026 18:48:00 +0900",
       "category": "정책",
-      "source": "joseilbo.com"
+      "source": "newspim.com"
     },
     {
-      "title": "경남도, '경제 영토 확장·경제 복지 강화' 두마리 토끼 잡는다",
-      "originallink": "https://www.newsgn.com/news/articleView.html?idxno=564886",
-      "link": "https://www.newsgn.com/news/articleView.html?idxno=564886",
-      "description": "경남도는 28일 이같은 내용을 포함해 민선9기 도정 목표 '활기찬 민생' 달성을 위한 3대 분야 56개 경제<b>정책</b>과... 반영해 <b>청년</b>·중장년·취업 취약계층 등 생애 주기별 맞춤형 취업 지원을 강화한다. <b>청년</b>은 교육-취업... ",
-      "pubDate": "Tue, 28 Jul 2026 18:20:00 +0900",
+      "title": "李대통령 아파트 근저당에…이억원 &quot;사인간 거래로 규제 대상 아냐&quot;",
+      "originallink": "http://www.yonhapnewstv.co.kr/news/AKR20260729184459fTj",
+      "link": "https://n.news.naver.com/mnews/article/422/0000890298?sid=100",
+      "description": "현행 금융당국의 고강도 대출규제와 실수요자 지원 <b>정책</b>에 관해서는 &quot;저희는 기존 총량규제나 이런 부분은 하면서, 실수요자나 서민·<b>청년</b>의 애로사항이 있는 부분은 핀셋지원을 통해 애로를 해소해나가려고 한다&quot;고... ",
+      "pubDate": "Wed, 29 Jul 2026 18:45:00 +0900",
       "category": "정책",
+      "source": "yonhapnewstv.co.kr"
+    },
+    {
+      "title": "충남도, 첫 조직 개편 완성",
+      "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1172240",
+      "link": "https://www.ggilbo.com/news/articleView.html?idxno=1172240",
+      "description": "이번 조직 개편은 인공지능 기본사회와 <b>청년</b> 성장, 사회연대경제, 행정통합과 균형발전, 농촌사회 회복, 노동<b>정책</b>, 기후에너지 전환 등 새로운 <b>정책</b> 수요에 맞춰 조직을 신설·재편했다. 핵심은 인공지능을 산업을 넘어... ",
+      "pubDate": "Wed, 29 Jul 2026 18:44:00 +0900",
+      "category": "정책",
+      "source": "ggilbo.com"
+    },
+    {
+      "title": "“독립정신과 기업가정신은 한 뿌리”… 양재생 부산상의 회장, 부산독...",
+      "originallink": "https://view.asiae.co.kr/article/2026072917352902996",
+      "link": "https://n.news.naver.com/mnews/article/277/0005796429?sid=102",
+      "description": "설립 <b>정책</b>토론회'에서 '부산의 미래 경쟁력과 역사문화자산의 가치'를 주제로 기조발제를 했다고 전했다.... 또 기념관이 <b>청년</b> 창업가들에게 부산 기업인들의 도전정신을 전달하는 교육·창업 프로그램 공간으로 활용될 수... ",
+      "pubDate": "Wed, 29 Jul 2026 18:44:00 +0900",
+      "category": "정책",
+      "source": "view.asiae.co.kr"
+    },
+    {
+      "title": "충북도 내년 국비 확보 종횡무진",
+      "originallink": "https://www.ccdn.co.kr/news/articleView.html?idxno=1091087",
+      "link": "https://www.ccdn.co.kr/news/articleView.html?idxno=1091087",
+      "description": "대한 <b>정책</b>·재정 지원을 요청했다. 신 지사는 김윤덕 국토교통부 장관과 국회 국토교통위원회 간사인... 조성, 다목적 방사광가속기 구축, K-뷰티 <b>청년</b>창업 생태계 구축 등 13개 사업이다. 총 요구액은 1962억6천만원 규모다.",
+      "pubDate": "Wed, 29 Jul 2026 18:44:00 +0900",
+      "category": "정책",
+      "source": "ccdn.co.kr"
+    },
+    {
+      "title": "대덕구, 신탄진 <b>청년</b>창업지원센터 개관…<b>청년</b> 창업 새 거점 출범",
+      "originallink": "https://www.ccdn.co.kr/news/articleView.html?idxno=1091075",
+      "link": "https://www.ccdn.co.kr/news/articleView.html?idxno=1091075",
+      "description": "상·하반기 각각 4개월간 직업상담사를 배치해 구인·구직 상담과 <b>취업</b>·창업을 연계한 맞춤형 <b>일자리</b> 서비스도 제공한다. 개관식 이후에는 창업 특강과 '창업가 네트워킹 데이'가 열려 <b>청년</b> 창업가들이 현장의 어려움과... ",
+      "pubDate": "Wed, 29 Jul 2026 18:44:00 +0900",
+      "category": "일자리",
+      "source": "ccdn.co.kr"
+    },
+    {
+      "title": "[민선9기 단체장 인터뷰]하학열 고성군수",
+      "originallink": "https://www.gnnews.co.kr/news/articleView.html?idxno=642147",
+      "link": "https://www.gnnews.co.kr/news/articleView.html?idxno=642147",
+      "description": "기업에는 투자할 공간을, <b>청년</b>에게는 도전할 기회를, 소상공인에게는 다시 일어설 수 있는 발판을 제공해 지역경제에 돈이 돌고 사람이 모이게 하겠다. -KTX 고성역이 고성경제에 끼칠 영향은. ▲고성의 <b>생활</b>권과 경제권을... ",
+      "pubDate": "Wed, 29 Jul 2026 18:40:00 +0900",
+      "category": "생활",
+      "source": "gnnews.co.kr"
+    },
+    {
+      "title": "경기도, '대학생 천원매점' 6개 대학으로 확대",
+      "originallink": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003255180&CMPT_CD=P0010&utm_source=naver&utm_medium=newsearch&utm_campaign=naver_news",
+      "link": "https://n.news.naver.com/mnews/article/047/0002524052?sid=100",
+      "description": "도는 29일 경기도청 율곡홀에서 NH농협은행, 하나은행, 경기도사회<b>복지</b>협의회, 경기사회<b>복지</b>공동모금회, 도내... 지원하는 <b>생활</b>밀착형 <b>청년</b> 지원사업이다. 사업에 필요한 예산 전액은 민간기업의 기부금으로 운영되며... ",
+      "pubDate": "Wed, 29 Jul 2026 18:36:00 +0900",
+      "category": "생활",
+      "source": "ohmynews.com"
+    },
+    {
+      "title": "[신(新) 중원시대] &quot;햇빛연금 도입·정주 환경 개선&quot;···지역 소멸 위...",
+      "originallink": "https://www.hankookilbo.com/news/article/A2026072414380000643?did=NA",
+      "link": "https://n.news.naver.com/mnews/article/469/0000945176?sid=102",
+      "description": "귀농·귀촌을 활성화하고 <b>청년</b> 창업 기반을 넓히는 한편, 은퇴자들이 제2의 삶을 시작할 수 있는 정주 환경을 만들겠다. 고려인 정착 사업을 지역 산업과 연계해 추진해 <b>생활</b>·정주 인구를 동시에 늘리는 게 목표다.... ",
+      "pubDate": "Wed, 29 Jul 2026 18:31:00 +0900",
+      "category": "생활",
+      "source": "hankookilbo.com"
+    },
+    {
+      "title": "&quot;삼성에서 일하고 아산에서 살고&quot;… 아산시-대학, 지역인재 양성 박차",
+      "originallink": "https://www.newstnt.com/news/articleView.html?idxno=712093",
+      "link": "https://www.newstnt.com/news/articleView.html?idxno=712093",
+      "description": "삼성전자의 대규모 첨단산업 투자가 예고된 아산시가 이를 지역 <b>청년</b>들의 <b>일자리</b> 창출과 정주 여건 개선으로... 기업 <b>취업</b> 연계 ▲대학별 특성화를 활용한 공동 연구 운영 ▲글로컬대학 등 정부 공모사업과 지역... ",
+      "pubDate": "Wed, 29 Jul 2026 18:26:00 +0900",
+      "category": "일자리",
+      "source": "newstnt.com"
+    },
+    {
+      "title": "[기고] 100세 시대, 장수보다 중요한 것은 품위 있는 노후다",
+      "originallink": "https://www.joongboo.com/news/articleView.html?idxno=363732681",
+      "link": "https://www.joongboo.com/news/articleView.html?idxno=363732681",
+      "description": "지금의 <b>청년</b>과 중장년 역시 머지않아 노인이 된다. 오늘 우리가 외면하는 문제가 내일 우리의 현실이 될 수 있다. 그렇기에 노인<b>복지</b>는 특정 계층을 위한 <b>복지</b>가 아니라 미래의 우리 모두를 위한 사회안전망이다. 100세... ",
+      "pubDate": "Wed, 29 Jul 2026 18:22:00 +0900",
+      "category": "생활",
+      "source": "joongboo.com"
+    },
+    {
+      "title": "기획] 동두천시 박형덕 시장이 견인하는 '동두천의 변화' 완성을 위한 시...",
+      "originallink": "https://www.fntoday.co.kr/news/articleView.html?idxno=389203",
+      "link": "https://www.fntoday.co.kr/news/articleView.html?idxno=389203",
+      "description": "교육기관, <b>일자리</b> 지원기관을 연계해 기업이 필요로 하는 기술인재를 지역에서 양성하고 <b>취업</b>까지 이어지는... 민선 9기 동두천시는 교통이 편리하고, <b>청년</b>에게는 <b>일자리</b>와 주거가 있으며, 아이와 어르신이 안심하고... ",
+      "pubDate": "Wed, 29 Jul 2026 18:20:00 +0900",
+      "category": "일자리",
+      "source": "fntoday.co.kr"
+    },
+    {
+      "title": "창원특례시 경제<b>일자리</b>국장 '3분기 정례브리핑'",
+      "originallink": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=701640",
+      "link": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=701640",
+      "description": "시는 이번 기업탐방을 통해 구직자의 기업 이해도와 <b>취업</b> 의지를 높이고, 지역 우수기업과의 연결을 강화해 <b>일자리</b> 미스매치 해소에 기여할 것으로 기대하고 있다. <b>청년</b> 해외인턴 6명, 6개국에서 글로벌 실무 경험= 시는... ",
+      "pubDate": "Wed, 29 Jul 2026 18:16:00 +0900",
+      "category": "일자리",
+      "source": "newsfreezone.co.kr"
+    },
+    {
+      "title": "대전 대덕구, 신탄진 <b>청년</b>창업지원센터 본격 운영",
+      "originallink": "https://www.newsis.com/view/NISX20260729_0003727691",
+      "link": "https://n.news.naver.com/mnews/article/003/0014096564?sid=102",
+      "description": "이와 함께 상·하반기 각각 4개월간 직업상담사를 배치해 구인·구직 상담과 함께 <b>취업</b> 및 창업을 연계한 맞춤형 <b>일자리</b> 서비스도 제공할 예정이다. 김찬술 구청장은 &quot;<b>청년</b>들에게 창업의 희망과 기회를 제공하고... ",
+      "pubDate": "Wed, 29 Jul 2026 18:11:00 +0900",
+      "category": "일자리",
+      "source": "newsis.com"
+    },
+    {
+      "title": "'1000원으로 생필품 산다'…경기도 대학생 천원매점 6개 대학으로 확대",
+      "originallink": "https://www.gosiweek.com/article/1065603777425081",
+      "link": "https://www.gosiweek.com/article/1065603777425081",
+      "description": "▲경기도 대학생 천원매점 협약식 1000원만 내면 식료품과 <b>생활</b>필수품 꾸러미를 구매할 수 있는 '경기도... 경기도는 29일 도청 율곡홀에서 NH농협은행, 하나은행, 경기도사회<b>복지</b>협의회, 경기사회<b>복지</b>공동모금회, 도내 6개... ",
+      "pubDate": "Wed, 29 Jul 2026 18:06:00 +0900",
+      "category": "생활",
+      "source": "gosiweek.com"
+    },
+    {
+      "title": "&quot;내가 받았던 도움, 후배들에게&quot;...고양시청소년재단, 직장 멘토 '컴유니...",
+      "originallink": "https://www.gukjenews.com/news/articleView.html?idxno=3650143",
+      "link": "https://www.gukjenews.com/news/articleView.html?idxno=3650143",
+      "description": "직장에 <b>취업</b>해서도 후배들에게 도움을 주는 '선순환 멘토' 프로그램이 큰 호응을 얻고 있다. 29일 국제뉴스의... 생태계&quot;라며&quot;<b>청년</b>들이 고양에서 배우고 성장하며 안정적으로 정착할 수 있도록 좋은 <b>일자리</b>를 늘리고... ",
+      "pubDate": "Wed, 29 Jul 2026 18:04:00 +0900",
+      "category": "일자리",
+      "source": "gukjenews.com"
+    },
+    {
+      "title": "양평군, 민선9기 공약사업 본격 추진…전진선 군수, &quot;지역 균형발전ㆍ행...",
+      "originallink": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202607291700352300051",
+      "link": "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202607291700352300051",
+      "description": "이번 보고회에서는 경제와 농업, 관광, <b>청년</b>을 미래 성장 동력으로 육성하는 한편, <b>복지</b>·교육·정주 여건... 이날 전진선 양평군수는 용문건강<b>생활</b>지원센터, 양평동부청소년문화의집, 용문면사무소 등 이전 후보지를 직접... ",
+      "pubDate": "Wed, 29 Jul 2026 18:02:00 +0900",
+      "category": "생활",
+      "source": "dnews.co.kr"
+    },
+    {
+      "title": "창원시, 국내 기업탐방부터 해외인턴까지 <b>취업</b>역량 강화",
+      "originallink": "http://www.gndomin.com/news/articleView.html?idxno=483941",
+      "link": "http://www.gndomin.com/news/articleView.html?idxno=483941",
+      "description": "연계 <b>청년</b> 해외인턴 등 현장 중심의 <b>취업</b>지원 프로그램을 운영한다고 밝혔다. 시는 '<b>일자리</b>이음 프로젝트 기업탐방 프로그램'을 통해 18세부터 64세까지의 미<b>취업</b> 구직자를 대상으로 오는 8월부터 10월까지 총 3회의... ",
+      "pubDate": "Wed, 29 Jul 2026 17:59:00 +0900",
+      "category": "일자리",
+      "source": "gndomin.com"
+    },
+    {
+      "title": "아산시, 삼성 투자 후속 조치 본격화…지역인재 양성 논의",
+      "originallink": "http://www.yonhapnewstv.co.kr/news/AKR20260729175905uCb",
+      "link": "https://n.news.naver.com/mnews/article/422/0000890278?sid=100",
+      "description": "&quot;첨단산업 투자 효과를 <b>청년</b> <b>일자리</b>와 지역 정착으로 확산&quot; 충남 아산시가 삼성전자의 대규모 첨단산업... 지역기업 <b>취업</b> 연계 ▲ 대학별 특성화 분야를 활용한 공동 연구·교육과정 운영 ▲ 글로컬대학·정부 공모사업과... ",
+      "pubDate": "Wed, 29 Jul 2026 17:59:00 +0900",
+      "category": "일자리",
+      "source": "yonhapnewstv.co.kr"
+    },
+    {
+      "title": "고성군, <b>청년</b> 주택·신혼부부·출산가구 임차보증금 대출이자 지원사업...",
+      "originallink": "http://www.gndomin.com/news/articleView.html?idxno=483950",
+      "link": "http://www.gndomin.com/news/articleView.html?idxno=483950",
+      "description": "다만 ▲고성군에 주민등록을 두고 거주하지 않는 자 ▲기초<b>생활</b>수급자 ▲금융기관에서 주거자금 대출을... 덜어 <b>청년</b>과 신혼·출산가구의 주거 안정에 실질적인 도움이 되길 바라며, 앞으로도 다양한 주거<b>복지</b> 정책을... ",
+      "pubDate": "Wed, 29 Jul 2026 17:59:00 +0900",
+      "category": "생활",
+      "source": "gndomin.com"
+    },
+    {
+      "title": "신한라이프, 고용노동부 주관 '미래내일 일 경험 사업' 참여한다",
+      "originallink": "http://www.newsbrite.net/news/articleView.html?idxno=199517",
+      "link": "http://www.newsbrite.net/news/articleView.html?idxno=199517",
+      "description": "신한라이프가 최근 증가하고 있는 미<b>취업</b> <b>청년</b>들의 <b>일자리</b> 찾기를 돕기 위해 고용노동부가 주관하는 올해 '미래내일 일 경험 사업'에 참여한다. 이 프로그램은 채용 시장이 수시-경력직 중심으로 전환함에 따라 관심 있는... ",
+      "pubDate": "Wed, 29 Jul 2026 17:58:00 +0900",
+      "category": "일자리",
+      "source": "newsbrite.net"
+    },
+    {
+      "title": "대구한의대, 미<b>취업</b> <b>청년</b> 맞춤 <b>취업</b>컨설팅…실전 구직 역량 강화",
+      "originallink": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4079699",
+      "link": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4079699",
+      "description": "대구한의대학교 대학<b>일자리</b>플러스센터 관계자는 &quot;앞으로도 미<b>취업</b> <b>청년</b> 발굴과 성공적인 사회 진입을 위해 지역 <b>취업</b> 유관기관과의 협력을 강화하고, <b>청년</b>들의 <b>취업</b> 성공을 위해 다각적인 지원을 아끼지 않겠다&quot;고... ",
+      "pubDate": "Wed, 29 Jul 2026 17:58:00 +0900",
+      "category": "일자리",
+      "source": "kyongbuk.co.kr"
+    },
+    {
+      "title": "민선 9기 '통하는 충남' 조직개편 완료...AI 수도·사회연대경제 육성 방...",
+      "originallink": "http://www.dtnews24.com/news/articleView.html?idxno=813765",
+      "link": "http://www.dtnews24.com/news/articleView.html?idxno=813765",
+      "description": "구현과 <b>청년</b> 성장, 사회연대경제 육성, 농촌지역사회 회복, 노동정책 강화, 기후에너지 전환 등 새로운 정책 수요에 맞춰 조직을 신설·재편하고 분산된 기능을 정책 중심으로 재구성했다. AI 수도 충남 구현...보건<b>복지</b>... ",
+      "pubDate": "Wed, 29 Jul 2026 17:58:00 +0900",
+      "category": "생활",
+      "source": "dtnews24.com"
+    },
+    {
+      "title": "아산시, 삼성 투자 후속 행보…지역인재 양성 본격 논의",
+      "originallink": "https://www.goodmorningcc.com/news/articleView.html?idxno=449769",
+      "link": "https://www.goodmorningcc.com/news/articleView.html?idxno=449769",
+      "description": "성과를 <b>청년</b> <b>일자리</b> 창출과 지역경제 활성화로 확산하기 위한 첫 번째 논의라는 점에서 의미가 있다고... 지역기업 <b>취업</b> 연계 ▲대학별 특성화 분야를 활용한 공동 연구·교육과정 운영 ▲글로컬대학·정부 공모사업과 지역... ",
+      "pubDate": "Wed, 29 Jul 2026 17:56:00 +0900",
+      "category": "일자리",
+      "source": "goodmorningcc.com"
+    },
+    {
+      "title": "[반도체·데이터센터, 전남광주시대 연다]① 프롤로그: &quot;스스로 성장하...",
+      "originallink": "https://www.namdonews.com/news/articleView.html?idxno=918458",
+      "link": "https://www.namdonews.com/news/articleView.html?idxno=918458",
+      "description": "지역 대학이 교육과정을 기업 수요에 맞게 바꾸면 <b>청년</b>들이 지역에서 배우고 <b>취업</b>하는 흐름도 만들 수... 가동, <b>청년</b> <b>일자리</b>로 이어지면 전남광주통합특별시는 스스로 성장하는 첨단산업 메가시티로 도약할 수 있다&quot;고... ",
+      "pubDate": "Wed, 29 Jul 2026 17:56:00 +0900",
+      "category": "일자리",
+      "source": "namdonews.com"
+    },
+    {
+      "title": "양평군, '전진선 군수, 민선9기 공약사업 본격 추진 나서다'",
+      "originallink": "http://www.queen.co.kr/news/articleView.html?idxno=461024",
+      "link": "http://www.queen.co.kr/news/articleView.html?idxno=461024",
+      "description": "이번 회의에서는 경제·농업·관광·<b>청년</b>을 미래 성장 동력으로 삼고, <b>복지</b>·교육·정주 여건 개선을 통해... 한국<b>생활</b>개선양평군연합회와 협력해 6월부터 9월까지 농업인 단체 행사, 비닐하우스, 농작업 현장, 마을회관 등을... ",
+      "pubDate": "Wed, 29 Jul 2026 17:56:00 +0900",
+      "category": "생활",
+      "source": "queen.co.kr"
+    },
+    {
+      "title": "김길수 영월군수 &quot;미래 100년 준비&quot;…예산 1조 시대 목표",
+      "originallink": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2453865",
+      "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2453865",
+      "description": "<b>청년</b> 일자리 창출을 위해 남면 북쌍리 일원에는 429억 원 규모의 제4농공단지를 조성해 40개 기업 유치를... <b>복지</b> 기반도 강화한다. 장사시설 확충과 대한노인회 영월군지회 환경 개선 등 100세 시대에 대비한 <b>생활</b>... ",
+      "pubDate": "Wed, 29 Jul 2026 17:50:00 +0900",
+      "category": "생활",
+      "source": "enewstoday.co.kr"
+    },
+    {
+      "title": "기획처 여론조사에서 <b>청년</b> 61.6% &quot;20년 뒤 한국 더 나빠질 것&quot;, 가장 큰 ...",
+      "originallink": "https://www.businesspost.co.kr/BP?command=article_view&num=443484",
+      "link": "https://www.businesspost.co.kr/BP?command=article_view&num=443484",
+      "description": "<b>청년</b>층이 현재 느끼는 가장 큰 불안 요인은 <b>일자리</b>와 사업의 불안정이었으며 중장기 국가발전전략에서는... 출산율과 인력을 끌어올리기 위한 적극적 대응에서는 일반국민이 저출생 극복을, <b>청년</b>층이 <b>청년 취업</b>... ",
+      "pubDate": "Wed, 29 Jul 2026 17:48:00 +0900",
+      "category": "일자리",
+      "source": "businesspost.co.kr"
+    },
+    {
+      "title": "경성대, 해연여고 대상 디지털콘텐츠 크리에이터 교육 성료",
+      "originallink": "https://www.cnbnews.com/news/articleView.html?idxno=1009672",
+      "link": "https://www.cnbnews.com/news/articleView.html?idxno=1009672",
+      "description": "경성대 대학<b>일자리</b>플러스센터는 앞으로도 지역 산업 수요를 반영한 실무 중심 교육 프로그램을 지속 확대해 <b>청년</b>들의 <b>취업</b>역량 강화에 힘쓸 계획이다. 또한 지역 학교와의 협력을 바탕으로 다양한 진로·<b>취업</b> 지원... ",
+      "pubDate": "Wed, 29 Jul 2026 17:46:00 +0900",
+      "category": "일자리",
+      "source": "cnbnews.com"
+    },
+    {
+      "title": "서부발전, 발전소 인근 대학 <b>청년 취업</b> 역량 높인다",
+      "originallink": "http://www.epj.co.kr/news/articleView.html?idxno=39083",
+      "link": "http://www.epj.co.kr/news/articleView.html?idxno=39083",
+      "description": "한국서부발전(사장 이정복)은 비수도권 대학생의 <b>취업</b>역량을 강화하는 <b>일자리</b> 체험 프로그램을 통해... 바탕으로 <b>청년</b>들이 발전산업 현장을 경험하고 이를 <b>취업</b>과 진로 설계로 연결되도록 적극 지원하겠다&quot;라고 말했다.",
+      "pubDate": "Wed, 29 Jul 2026 17:46:00 +0900",
+      "category": "일자리",
+      "source": "epj.co.kr"
+    },
+    {
+      "title": "경남도, 21조 투입해 피지컬 AI '글로벌 1강' 입지 다진다",
+      "originallink": "https://www.newsgn.com/news/articleView.html?idxno=565149",
+      "link": "https://www.newsgn.com/news/articleView.html?idxno=565149",
+      "description": "기술 변화가 빨라질수록 산업단지 <b>청년</b> 근로자들은 자신의 <b>일자리</b>가 사라지거나 숙련기술을 따라가지... AI 교육을 받은 <b>청년</b>이 지역 기업에 <b>취업</b>하고, 기업에서 성장한 <b>청년</b>이 후배에게 기술을 전수하는 선순환... ",
+      "pubDate": "Wed, 29 Jul 2026 17:44:00 +0900",
+      "category": "일자리",
       "source": "newsgn.com"
     },
     {
-      "title": "부동산 2차 토론회... 상가공실 활용·핀셋 대출·초고가 공제 한도 제안",
-      "originallink": "https://www.meconomynews.com/news/articleView.html?idxno=200004",
-      "link": "https://www.meconomynews.com/news/articleView.html?idxno=200004",
-      "description": "주택금융 발제자인 김영도 한국금융연구원 선임연구위원은 <b>청년</b>층 배려책으로 <b>정책</b> 모기지와 <b>청년</b> 대상 대출 확대를 언급했다. 다만 <b>청년</b> 실수요자 선별, 임차와 매매 수요의 우선순위 등을 함께 고려해야 한다고 했다.... ",
-      "pubDate": "Tue, 28 Jul 2026 18:20:00 +0900",
-      "category": "정책",
-      "source": "meconomynews.com"
-    },
-    {
-      "title": "[유한양행-유일한 아카데미] 윤건수 대표 “혁신가 알아보는 안목도 경...",
-      "originallink": "https://futurechosun.com/?p=155707",
-      "link": "https://futurechosun.com/?p=155707",
-      "description": "유지선(가천대 화공생명공학과 4학년) 씨는 부천의료<b>복지</b>사회적협동조합을 찾아 지역 노인 대상 프로그램과 현장 상황을 조사했다. 유 씨는 “<b>청년</b>의 시각만으로는 노인의 <b>생활</b>과 외로움을 충분히 이해하기 어렵다는... ",
-      "pubDate": "Tue, 28 Jul 2026 18:20:00 +0900",
-      "category": "생활",
-      "source": "futurechosun.com"
-    },
-    {
-      "title": "[경기 단체장] 이민근 안산시장 인터뷰",
-      "originallink": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3030095",
-      "link": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3030095",
-      "description": "여기에 <b>청년</b> 인턴과 행정체험 연수 등 실무경험 기회를 확대해 <b>취업</b> 경쟁력을 높이고, 양질의 <b>일자리</b>를 지속적으로 창출해 <b>청년</b>들이 안산에서 일하고 정착하며 미래를 설계할 수 있는 도시를 만들겠다. 공단 화재... ",
-      "pubDate": "Tue, 28 Jul 2026 18:14:00 +0900",
+      "title": "남구, <b>취업</b>준비<b>청년</b> 연1회 증명사진 촬영 지원",
+      "originallink": "http://www.jndn.com/article.php?aid=1785314350436904068",
+      "link": "http://www.jndn.com/article.php?aid=1785314350436904068",
+      "description": "남구 관계자는 “<b>청년</b>들에게 실질적 혜택을 제공하는 체감형 정책을 추진해 <b>청년</b> 구직자들이 <b>취업</b> 준비 초기 단계에서부터 자신 있게 <b>일자리</b> 찾기에 나설 수 있도록 적극 지원하겠다”고 밝혔다.",
+      "pubDate": "Wed, 29 Jul 2026 17:42:00 +0900",
       "category": "일자리",
-      "source": "kihoilbo.co.kr"
+      "source": "jndn.com"
     },
     {
-      "title": "[경기 단체장] 이기형 김포시장 인터뷰",
-      "originallink": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3030094",
-      "link": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3030094",
-      "description": "<b>일자리</b> 분야에서는 김포시 <b>일자리</b>센터와 여성새로일하기센터를 중심으로 맞춤형 <b>취업</b> 지원을 강화하고, <b>청년</b>지원센터를 통해 <b>청년</b>들이 김포에서 <b>취업</b>하고 창업하며 정착할 수 있도록 지원하겠다. 기업 지원도 확대해... ",
-      "pubDate": "Tue, 28 Jul 2026 18:14:00 +0900",
+      "title": "이억원 &quot;부동산·<b>금융</b> 절연&quot; 놓고…야당 &quot;대출로 집 사면 나쁜가&quot;",
+      "originallink": "https://dealsite.co.kr/articles/166198",
+      "link": "https://dealsite.co.kr/articles/166198",
+      "description": "이어 조 의원은 대출이 기업과 소상공인의 성장을 지원하는 것처럼 개인에게도 <b>자산 형성</b>의 기회를 제공하는 <b>금융</b> 수단이라고 주장했다. 기성세대는 <b>금융</b>을 활용해 <b>자산</b>을 축적한 반면 <b>청년</b>층은 강화된 대출 규제로... ",
+      "pubDate": "Wed, 29 Jul 2026 17:42:00 +0900",
+      "category": "금융",
+      "source": "dealsite.co.kr"
+    },
+    {
+      "title": "서부발전, 발전소 인근 대학 <b>청년 취업</b> 역량 높인다",
+      "originallink": "https://www.ccdailynews.com/news/articleView.html?idxno=2431117",
+      "link": "https://www.ccdailynews.com/news/articleView.html?idxno=2431117",
+      "description": "한국서부발전은 비수도권 대학생의 <b>취업</b>역량을 강화하는 <b>일자리</b> 체험 프로그램을 통해 지역인재 육성에... 바탕으로 <b>청년</b>들이 발전산업 현장을 경험하고 이를 <b>취업</b>과 진로 설계로 연결되도록 적극 지원하겠다&quot;고 말했다.... ",
+      "pubDate": "Wed, 29 Jul 2026 17:30:00 +0900",
       "category": "일자리",
-      "source": "kihoilbo.co.kr"
+      "source": "ccdailynews.com"
     },
     {
-      "title": "장정민 옹진군수 &quot;<b>생활</b> 속 변화 체감하는 군정 만들 것&quot;",
-      "originallink": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3030144",
-      "link": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3030144",
-      "description": "체감하는 <b>생활</b> 중심 군정을 펼치겠다&quot;고 밝혔다. 장 군수는 민선 9기를 섬의 불편을 해소하고 지속 가능한... 한편 <b>청년</b>이 돌아오는 옹진, 미래산업 육성, 해양관광 활성화, 의료·<b>복지</b> 확충을 통해 정주여건을 획기적으로... ",
-      "pubDate": "Tue, 28 Jul 2026 18:14:00 +0900",
-      "category": "생활",
-      "source": "kihoilbo.co.kr"
+      "title": "우리<b>금융</b>, '전북 우리WON<b>금융</b>타운' 개소…전북 <b>금융</b>중심지 도약 본격화",
+      "originallink": "https://www.wikitree.co.kr/articles/1149225",
+      "link": "https://www.wikitree.co.kr/articles/1149225",
+      "description": "국내 <b>자산</b>운용사와 <b>금융</b>기관들이 관련 조직을 잇달아 배치하며 <b>금융</b> 클러스터가 <b>형성</b>되고 있다. 우리<b>금융</b>도... 전북 지역 대학생을 대상으로 한 <b>청년</b> 인턴십 프로그램도 운영해 <b>자산</b>운용 실무 경험을 제공하고 <b>금융</b>... ",
+      "pubDate": "Wed, 29 Jul 2026 16:30:00 +0900",
+      "category": "금융",
+      "source": "wikitree.co.kr"
     },
     {
-      "title": "자립준비<b>청년</b> 새 출발 응원.. '꿈도약응원금' 전달",
-      "originallink": "http://www.gjdream.com/news/articleView.html?idxno=671340",
-      "link": "http://www.gjdream.com/news/articleView.html?idxno=671340",
-      "description": "일상<b>생활</b>에서 겪는 고민을 나눴다. 특히 당사자 선배와의 멘토링을 통해 실질적인 경험과 조언을 얻는 한편... 꿈나무사회<b>복지</b>관은 <b>청년</b>들의 든든한 울타리가 되어 기쁜 일은 함께 축하하고, 힘들고 슬픈 일이 있을 때는... ",
-      "pubDate": "Tue, 28 Jul 2026 18:12:00 +0900",
-      "category": "생활",
-      "source": "gjdream.com"
+      "title": "무주택·1주택·다주택자의 생존전략은?…세제개편 대응책 정리",
+      "originallink": "https://realty.chosun.com/site/data/html_dir/2026/07/29/2026072900924.html",
+      "link": "https://realty.chosun.com/site/data/html_dir/2026/07/29/2026072900924.html",
+      "description": "김 소장은 “무주택자는 <b>청약</b>과 매수에 올인해야 한다”며 “<b>청약</b> 조건을 유지하면서 급매나 실거주 가능한 주택도 함께 살펴야 한다”고 했다. 전세대출 규제가 강화되면 전세의 <b>월세</b> 전환이 빨라지고 무주택자의 <b>주거</b>비... ",
+      "pubDate": "Wed, 29 Jul 2026 09:38:00 +0900",
+      "category": "주거",
+      "source": "realty.chosun.com"
+    },
+    {
+      "title": "[유통소식] 신세계百, 강남점 '폼폼푸린 베이커리 카페' 국내 첫 선",
+      "originallink": "http://www.4th.kr/news/articleView.html?idxno=2115398",
+      "link": "http://www.4th.kr/news/articleView.html?idxno=2115398",
+      "description": "이를 통해 작가의 작업 <b>형성</b>과 전개 과정을 조명한다. 최명영 작가는 단색화 1세대 작가로 '평면' 개념을... 지능화되는 보이스피싱 등 <b>금융</b>사기로부터 고객 <b>자산</b>을 보호하고 소비자 신뢰를 강화하기 위해 마련됐다.... ",
+      "pubDate": "Wed, 29 Jul 2026 06:00:00 +0900",
+      "category": "금융",
+      "source": "4th.kr"
     },
     {
       "title": "[기자수첩] 현금부자들의 놀이터",
@@ -267,213 +528,6 @@
       "pubDate": "Tue, 28 Jul 2026 18:10:00 +0900",
       "category": "주거",
       "source": "fnnews.com"
-    },
-    {
-      "title": "성현달 부산시의원 &quot;산업은행·글로벌허브도시 특별법·반도체 프로젝트...",
-      "originallink": "http://www.ikld.kr/news/articleView.html?idxno=338202",
-      "link": "http://www.ikld.kr/news/articleView.html?idxno=338202",
-      "description": "원, <b>취업</b>유발효과 약 3만6800명이 기대된다&quot;고 설명했다. 아울러 &quot;이전 공공기관의 지역인재 30% 이상 의무채용을 통해 부산 <b>청년</b>들에게 양질의 <b>일자리</b>를 제공하고 지역대학의 경쟁력도 높일 수 있다&quot;고 강조했다.... ",
-      "pubDate": "Tue, 28 Jul 2026 18:10:00 +0900",
-      "category": "일자리",
-      "source": "ikld.kr"
-    },
-    {
-      "title": "[패트롤]경주시-영천시-경산시-달서구-청도군-대구교육청",
-      "originallink": "https://www.ekn.kr/web/view.php?key=20260728023517059",
-      "link": "https://www.ekn.kr/web/view.php?key=20260728023517059",
-      "description": "사업안내단은 주민과 가장 밀접한 동 행정<b>복지</b>센터의 주민자치위원회와 통우회, 지역사회보장협의체... 방문 기관에는 결혼 인식 개선과 <b>청년</b> 만남 기회 확대, 결혼친화 기반 조성, 민·관 협력 네트워크 구축 등 달서구의... ",
-      "pubDate": "Tue, 28 Jul 2026 18:10:00 +0900",
-      "category": "생활",
-      "source": "ekn.kr"
-    },
-    {
-      "title": "대출 규제에 12만명 사채 내몰려…이용액 2배 급증",
-      "originallink": "https://www.sedaily.com/article/20072946?ref=naver",
-      "link": "https://n.news.naver.com/mnews/article/011/0004646129?sid=101",
-      "description": "대출금의 용도는 기초<b>생활</b>비(41.0%)와 부채 돌려막기(26.1%)가 대부분을 차지했다. 20대 <b>청년</b>층의 경우 등록... 서민금융연구원은 정책금융과 채무 조정, <b>복지</b> 프로그램으로 연결되는 금융 안전망 구축이 시급하다고... ",
-      "pubDate": "Tue, 28 Jul 2026 18:10:00 +0900",
-      "category": "생활",
-      "source": "sedaily.com"
-    },
-    {
-      "title": "<b>청년</b>실업이 부정부패·불공정과 만날 때 [유레카]",
-      "originallink": "https://www.hani.co.kr/arti/opinion/column/1270372.html",
-      "link": "https://n.news.naver.com/mnews/article/028/0002816130?sid=110",
-      "description": "그들은 <b>일자리</b>를 구하지도 않습니다”라고 조롱했지만, 제트 세대는 ‘바퀴벌레국민당’ 설립이라는 풍자로 맞받아쳤다. <b>청년</b>들은 <b>취업</b> 실패 초기, 노력과 스펙 부족 등 자기 자신에게서 원인을 찾는다. 실업이 구조화... ",
-      "pubDate": "Tue, 28 Jul 2026 18:02:00 +0900",
-      "category": "일자리",
-      "source": "hani.co.kr"
-    },
-    {
-      "title": "경남도민 멤버십 카드 이르면 2028년 출시…정책 실효성 담보는 '숙제'",
-      "originallink": "https://www.idomin.com/news/articleView.html?idxno=2011152",
-      "link": "https://www.idomin.com/news/articleView.html?idxno=2011152",
-      "description": "특히 도는 생애주기별 맞춤형 <b>취업</b> 지원 강화로 도민의 안정적인 <b>일자리</b> 확보를 도울 방침이다. <b>청년</b>은 교육·<b>취업</b> 전환기, 경력 형성기, 정착·안정기로 세분화해 현장 실습과 일 경험 지원을 강화한다. 중장년은 서부권... ",
-      "pubDate": "Tue, 28 Jul 2026 18:02:00 +0900",
-      "category": "일자리",
-      "source": "idomin.com"
-    },
-    {
-      "title": "경북 K-U시티 프로젝트, <b>청년</b> <b>일자리</b>·산학협력 성과",
-      "originallink": "https://www.dkilbo.com/news/articleView.html?idxno=549870",
-      "link": "https://www.dkilbo.com/news/articleView.html?idxno=549870",
-      "description": "경북도는 K-U시티 프로젝트 추진으로 <b>청년</b> <b>일자리</b>·산학협력 등에서 성과가 나타나고 있다고 28일 밝혔다.... 이번 컨설팅은 단순한 인재 양성을 넘어 실질적인 <b>취업</b> 성과를 점검하고 현장의 애로사항을 반영해 사업의... ",
-      "pubDate": "Tue, 28 Jul 2026 18:00:00 +0900",
-      "category": "일자리",
-      "source": "dkilbo.com"
-    },
-    {
-      "title": "내년 기준 중위소득 6.70% 역대 최대 인상…4인 가구 692만원",
-      "originallink": "https://www.youthdaily.co.kr/news/article.html?no=223964",
-      "link": "https://www.youthdaily.co.kr/news/article.html?no=223964",
-      "description": "【 <b>청년</b>일보 】 정부가 내년도 기준 중위소득을 4인 가구 기준 올해보다 6.70% 인상된 692만9천885원으로... 보건<b>복지</b>부는 28일 제80차 중앙<b>생활</b>보장위원회를 개최하고, 기준 중위소득 산정방식 개편안과 함께 2027년도... ",
-      "pubDate": "Tue, 28 Jul 2026 17:50:00 +0900",
-      "category": "생활",
-      "source": "youthdaily.co.kr"
-    },
-    {
-      "title": "전진선 양평군수 '군민 의견 청취' 민생 현장 종횡무진",
-      "originallink": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3030159",
-      "link": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3030159",
-      "description": "현장도 <b>청년</b>의 눈으로 보면 새로운 가능성을 발견할 수 있다&quot;고 강조했다. 단월면에서는 기초<b>생활</b> 거점조성... 또 단월면 농업경영인연합 회복놀이, 사회<b>복지</b>사협회 차담회, 공직자윤리위원회, 칭찬 공무원 간담회 등... ",
-      "pubDate": "Tue, 28 Jul 2026 17:50:00 +0900",
-      "category": "생활",
-      "source": "kihoilbo.co.kr"
-    },
-    {
-      "title": "‘1년 넘게 쉰 <b>청년</b>’ 2년새 13.5%↑…미<b>취업</b> 길어질수록 복귀 더 멀어져",
-      "originallink": "https://www.sedaily.com/article/20072922?ref=naver",
-      "link": "https://n.news.naver.com/mnews/article/011/0004646107?sid=101",
-      "description": "재정경제부는 3분기 초 ‘<b>청년</b> <b>일자리</b> 회복 방안’을 발표하고 2030년까지 <b>청년</b> <b>일자리</b> 20만 개 이상 창출을 추진한다. 반도체, 인공지능(AI) 등 첨단산업과 유망 분야를 중심으로 민간 <b>취업</b>과 연계된 양질의 <b>일자리</b> 10만... ",
-      "pubDate": "Tue, 28 Jul 2026 17:49:00 +0900",
-      "category": "일자리",
-      "source": "sedaily.com"
-    },
-    {
-      "title": "성주군, 군정 운영 방향과 5대 핵심 공약 발표",
-      "originallink": "https://www.joongdo.co.kr/web/view.php?key=20260728010008451",
-      "link": "https://www.joongdo.co.kr/web/view.php?key=20260728010008451",
-      "description": "새로운 <b>일자리</b>를 창출해 지역경제에 활력을 불어넣는 선순환 구조를 구축할 방침이다. 군민 삶의 질 향상을 위한 복지 정책도 확대된다. 고령층 돌봄서비스와 생활 지원을 강화하고 <b>청년</b>층의 주거·창업·<b>취업</b> 지원을... ",
-      "pubDate": "Tue, 28 Jul 2026 17:48:00 +0900",
-      "category": "일자리",
-      "source": "joongdo.co.kr"
-    },
-    {
-      "title": "부산경총, ‘부·울·경 웰컴 <b>청년</b> 인재 지원사업’ 네트워크 협의회 개...",
-      "originallink": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065602347667719",
-      "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065602347667719",
-      "description": "서울·경기·인천·충청권·세종·대전 및 해외 등에 주소지를 둔 <b>청년</b>이 부·울·경 소재 관련 기업에 <b>취업</b>한... 한편, 부산경총은 고용노동부 및 부산시·울산시·경상남도와 손잡고 초광역 <b>일자리</b> 지원사업인 ‘2026년... ",
-      "pubDate": "Tue, 28 Jul 2026 17:46:00 +0900",
-      "category": "일자리",
-      "source": "megaeconomy.co.kr"
-    },
-    {
-      "title": "김영철 한국플라스틱포장용기협회 회장 &quot;재활용하면 중요한 자원입니다...",
-      "originallink": "https://www.incheonilbo.com/news/articleView.html?idxno=1328280",
-      "link": "https://www.incheonilbo.com/news/articleView.html?idxno=1328280",
-      "description": "김 회장 부부는 공장 기숙사에서 <b>생활</b>하며 회사를 지켰고, 직원들은 급여를 자진 삭감하고 개인 보증까지... 직원 <b>복지</b>에도 힘써 왔다. 지역사회와의 동행도 이어가고 있다. 국제로타리 3600지구 광주클럽 회장과... ",
-      "pubDate": "Tue, 28 Jul 2026 17:46:00 +0900",
-      "category": "생활",
-      "source": "incheonilbo.com"
-    },
-    {
-      "title": "반도체로 압도적 성장할 '전남광주통합특별시'",
-      "originallink": "http://www.jndn.com/article.php?aid=1785228008436809058",
-      "link": "http://www.jndn.com/article.php?aid=1785228008436809058",
-      "description": "반도체 클러스터가 조성되면 지역 대학에서 반도체와 AI, 에너지 분야를 전공한 인재들이 지역 기업에 <b>취업</b>하... 사업 추진 전반을 점검하고 필요한 입법·정책적 지원을 병행해 양질의 <b>청년</b> <b>일자리</b>를 위한 확고한 기반도... ",
-      "pubDate": "Tue, 28 Jul 2026 17:44:00 +0900",
-      "category": "일자리",
-      "source": "jndn.com"
-    },
-    {
-      "title": "[위클리오늘] 전남광주특별시(7.28)",
-      "originallink": "http://www.weeklytoday.com/news/articleView.html?idxno=787705",
-      "link": "http://www.weeklytoday.com/news/articleView.html?idxno=787705",
-      "description": "'광주<b>청년</b> 일경험드림 사업'은 미<b>취업</b> <b>청년</b>들에게 지역 사업장에서 실무를 경험할 기회를 제공하는 <b>청년</b> <b>일자리</b> 지원사업으로, 2017년 시작 이후 현재까지 8천390여 명이 참여하며 지역 대표 <b>청년</b>정책으로 자리 잡았다.... ",
-      "pubDate": "Tue, 28 Jul 2026 17:42:00 +0900",
-      "category": "일자리",
-      "source": "weeklytoday.com"
-    },
-    {
-      "title": "[위클리오늘] 포항시 오늘(7. 28)",
-      "originallink": "http://www.weeklytoday.com/news/articleView.html?idxno=787694",
-      "link": "http://www.weeklytoday.com/news/articleView.html?idxno=787694",
-      "description": "박진숙 <b>일자리</b><b>청년</b>과장은 &quot;사업장별 특성을 반영한 현장 중심의 안전점검과 지속적인 안전관리를 통해... ◇포항시, 맞춤형 직업교육훈련 개최 - 경력보유여성 <b>일자리</b> 창출 앞장 - 현장 중심 교육과정 운영 및 <b>취업</b> 연계... ",
-      "pubDate": "Tue, 28 Jul 2026 17:42:00 +0900",
-      "category": "일자리",
-      "source": "weeklytoday.com"
-    },
-    {
-      "title": "'성심당 전공학과'에 전국 빵순이·빵돌이 술렁… <b>취업</b>도 인기도 승승장...",
-      "originallink": "https://www.daejonilbo.com/news/articleView.html?idxno=2291047",
-      "link": "https://n.news.naver.com/mnews/article/656/0000182663?sid=102",
-      "description": "성심당 <b>취업</b>이 꿈인 입시생들에겐 희망으로, 전국 각지 소비자들에게는 전문성을 기대하게 하는 요인으로... 대학과 지역 대표 기업이 손잡고 인재를 양성하는 것을 넘어, <b>청년</b> <b>일자리</b> 창출과 지역 정착으로 잇는... ",
-      "pubDate": "Tue, 28 Jul 2026 17:40:00 +0900",
-      "category": "일자리",
-      "source": "daejonilbo.com"
-    },
-    {
-      "title": "&quot;전남·광주 강점 묶어…세계 최고 반도체 클러스터 만들 것&quot;",
-      "originallink": "https://www.mk.co.kr/article/12109587",
-      "link": "https://n.news.naver.com/mnews/article/009/0005713420?sid=102",
-      "description": "할것 <b>청년</b>이 지역에 머물 수 있게 양질의 새 <b>일자리</b> 늘리겠다 광주와 전남이 40여 년 만에 다시 하나가 됐다.... 앞으로 기업 수요에 맞춘 교육과 <b>취업</b>을 연계해 지역에서 배우고 지역에서 일하는 구조를 만들겠다. 결국... ",
-      "pubDate": "Tue, 28 Jul 2026 17:35:00 +0900",
-      "category": "일자리",
-      "source": "mk.co.kr"
-    },
-    {
-      "title": "“피지컬 AI·우주항공…‘첨단산업 추진단’ 띄워 원스톱 지원”",
-      "originallink": "https://www.sedaily.com/article/20072907?ref=naver",
-      "link": "https://n.news.naver.com/mnews/article/011/0004646097?sid=102",
-      "description": "연계형 <b>취업</b> 모델을 확대하고, 창원국가산업단지 등 주요 산업단지에 <b>청년</b> 친화형 임대기숙사를 조성하는... 지원과 <b>청년</b>연금 도입도 추진한다. 박 지사는 “지역에서 교육받은 인재가 지역에서 <b>일자리</b>를 얻고 정착하는... ",
-      "pubDate": "Tue, 28 Jul 2026 17:34:00 +0900",
-      "category": "일자리",
-      "source": "sedaily.com"
-    },
-    {
-      "title": "[속보] 내년 기초수급 생계급여 221만7563원…기준 중위소득 6.7% 인상",
-      "originallink": "https://www.hani.co.kr/arti/society/rights/1270362.html",
-      "link": "https://n.news.naver.com/mnews/article/028/0002816122?sid=102",
-      "description": "기준 중위소득은 기초<b>생활</b>수급부터 국가장학금, 행복주택 공급, 아이돌봄서비스, <b>청년</b>미래적금 등 15개 부처 80개 <b>복지</b> 사업의 기준선이다. 기준 중위소득이 오르면 <b>복지</b> 수급액과 대상자가 확대된다. 기준... ",
-      "pubDate": "Tue, 28 Jul 2026 17:30:00 +0900",
-      "category": "생활",
-      "source": "hani.co.kr"
-    },
-    {
-      "title": "&quot;월세가 단돈 1만원&quot;…전주 <b>청년</b>만원주택 141호로 확대",
-      "originallink": "https://view.asiae.co.kr/article/2026072817054876519",
-      "link": "https://n.news.naver.com/mnews/article/277/0005795802?sid=102",
-      "description": "가장 크게 부담을 느끼는 주거 문제를 해결하는 것이 지역에 머물며 안정적으로 <b>생활</b>할 수 있는 기반&quot;이라며 &quot;<b>청년</b>임대주택 공급을 확대하고 <b>청년</b>의 눈높이에 맞는 주거<b>복지</b> 정책을 지속적으로 추진하겠다&quot;고 말했다.",
-      "pubDate": "Tue, 28 Jul 2026 17:28:00 +0900",
-      "category": "생활",
-      "source": "view.asiae.co.kr"
-    },
-    {
-      "title": "해남군의회, 재난 대응 강화... 정례회·행정감사 준비 본격화",
-      "originallink": "http://www.newsworker.co.kr/news/articleView.html?idxno=438705",
-      "link": "http://www.newsworker.co.kr/news/articleView.html?idxno=438705",
-      "description": "등 <b>생활</b> 현장 중심의 지원책을 마련해 달라고 주문했다. 경로당 냉방기 수리·교체와 어르신 체육시설... 해남군 장수노인 예우 및 <b>복지</b>증진 조례안과 노동상담소 설치·운영 조례안 등 25건은 원안 가결됐으며, <b>청년</b>공공... ",
-      "pubDate": "Tue, 28 Jul 2026 17:26:00 +0900",
-      "category": "생활",
-      "source": "newsworker.co.kr"
-    },
-    {
-      "title": "“<b>청년</b>정책, 한 권으로 쉽게 본다”…고용노동부 ‘알기 쉬운 <b>청년</b> 정책...",
-      "originallink": "https://www.kgnews.co.kr/news/article.html?no=905550",
-      "link": "https://www.kgnews.co.kr/news/article.html?no=905550",
-      "description": "취업·주거·금융·<b>복지</b> 정보 총정리…QR코드 수록 전국 <b>청년</b>센터·도서관·스터디카페 비치 고용노동부가... 책자에는 <b>청년</b>들이 사회<b>생활</b>을 시작하며 알아야 할 근로계약서 작성 방법, 임금체불 대응, 산업재해 예방, 직장... ",
-      "pubDate": "Tue, 28 Jul 2026 17:20:00 +0900",
-      "category": "생활",
-      "source": "kgnews.co.kr"
-    },
-    {
-      "title": "목포시, 공공임대주택 '광장1렌트하우스' 입주자 모집",
-      "originallink": "https://view.asiae.co.kr/article/2026072817031355022",
-      "link": "https://n.news.naver.com/mnews/article/277/0005795793?sid=102",
-      "description": "광장1렌트하우스는 목포시가 직접 운영하는 도시재생형 공공임대주택으로 <b>청년</b>을 비롯해 도시재생사업 철거민, 기초<b>생활</b>수급자, 장애인, 고령자 등 주거 취약계층의 안정적인 주거를 지원하는 대표적인 주거<b>복지</b>사업이... ",
-      "pubDate": "Tue, 28 Jul 2026 17:17:00 +0900",
-      "category": "생활",
-      "source": "view.asiae.co.kr"
     },
     {
       "title": "[더밸류 브리핑] 오늘의 <b>금융</b>계 소식...신한<b>금융</b>그룹·신한은행·수협중...",
@@ -683,15 +737,6 @@
       "source": "ifs.or.kr"
     },
     {
-      "title": "[AI로 본 부동산] 청약통장, 계속 넣어야 할까…당첨 확률·기회비용 따...",
-      "originallink": "https://www.newspim.com/news/view/20260724000793",
-      "link": "https://www.newspim.com/news/view/20260724000793",
-      "description": "주택청약종합저축 가입자 감소를 단순히 2030 <b>청년</b>층의 박탈감으로만 해석하기는 어렵다는 분석이 나온다.... 청약을 통한 내 집 마련보다 기존 주택 매수나 임대 거주, <b>금융자산 형성</b>이 현실적이라고 판단하는 수요도... ",
-      "pubDate": "Sun, 26 Jul 2026 06:00:00 +0900",
-      "category": "금융",
-      "source": "newspim.com"
-    },
-    {
       "title": "성명서 낭독하며 억울함 호소…고양창릉 S4 비대위, 청와대 앞 규탄 집...",
       "originallink": "http://www.inews24.com/view/1988678",
       "link": "https://n.news.naver.com/mnews/article/031/0001044741?sid=102",
@@ -699,24 +744,6 @@
       "pubDate": "Sat, 25 Jul 2026 12:32:00 +0900",
       "category": "주거",
       "source": "inews24.com"
-    },
-    {
-      "title": "&quot;세상은 불공정&quot; vs &quot;내 탓&quot;…코인과 적금 사이 엇갈린 <b>청년</b>들",
-      "originallink": "https://www.edaily.co.kr/news/newspath.asp?newsid=01908966645518128",
-      "link": "https://n.news.naver.com/mnews/article/018/0006336684?sid=101",
-      "description": "연구진은 “<b>청년</b>의 <b>금융자산</b> 보유 유형은 단순한 투자 행태를 넘어 사회경제적 배경과 사회 인식을 함께 반영한다”며 “<b>청년</b> <b>자산 형성</b> 정책을 설계할 때 <b>금융</b> 접근성뿐 아니라 지역 간 기회 격차와 사회 인식의 차이도... ",
-      "pubDate": "Sat, 25 Jul 2026 08:32:00 +0900",
-      "category": "금융",
-      "source": "edaily.co.kr"
-    },
-    {
-      "title": "두나무의 <b>청년</b> 돕기 방정식...오경석 대표 &quot;아낌없는 지원&quot;",
-      "originallink": "https://www.cbci.co.kr/news/articleView.html?idxno=591691",
-      "link": "https://www.cbci.co.kr/news/articleView.html?idxno=591691",
-      "description": "단순한 부채 상환 지원에 그치지 않고 <b>청년</b> 스스로 재무 상태를 진단하며 건강한 <b>금융</b> 습관을 <b>형성</b>할 수 있도록 <b>금융</b>교육과 <b>자산 형성</b> 지원, 1:1 맞춤형 멘토링을 패키지로 제공해 실질적인 변화를 이끌어낸다. 채무 조정... ",
-      "pubDate": "Fri, 24 Jul 2026 16:58:00 +0900",
-      "category": "금융",
-      "source": "cbci.co.kr"
     },
     {
       "title": "“빨리하겠다, 내가 원래 속도가 빠른 사람이다”: 슬로우레터 7월24일.",
@@ -816,15 +843,6 @@
       "pubDate": "Wed, 22 Jul 2026 10:52:00 +0900",
       "category": "주거",
       "source": "biz.heraldcorp.com"
-    },
-    {
-      "title": "[아경의 창]&quot;돈을 모을 수가 없다&quot;는 <b>청년</b>의 현실",
-      "originallink": "https://view.asiae.co.kr/article/2026072207460102873",
-      "link": "https://n.news.naver.com/mnews/article/277/0005792969?sid=110",
-      "description": "&quot;현금이 없으면 <b>청약</b>에 당첨돼도 계약을 못 한다&quot;는 <b>청년</b>과 서민들의 자조도 쏟아졌다. 국민 의견 수렴을... 국토교통부 <b>주거</b>실태조사에 따르면 <b>청년</b>가구 82.6%가 세입자다. 이들은 최저임금의 31%를 <b>월세</b> 등의 <b>주거</b>비로... ",
-      "pubDate": "Wed, 22 Jul 2026 10:40:00 +0900",
-      "category": "주거",
-      "source": "view.asiae.co.kr"
     }
   ]
 }
